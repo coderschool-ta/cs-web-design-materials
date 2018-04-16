@@ -2,7 +2,7 @@
 
 **Due:** Monday, April 23th at 10pm
 
-**Overview:** Build [Grab](https://www.grab.com/vn/en/) website landing page from scratch using only HTML and CSS. The landing page does not have to be responsive because we will cover Responsive Web Design in week 2. This landing page is similar to the Spotify landing page that you did in Lab 1.
+**Overview:** Build Grab [landing page](https://www.grab.com/vn/en/) from scratch using only HTML and CSS. The landing page does not have to be responsive because we will cover Responsive Web Design in week 2. This landing page is similar to the Spotify landing page that you did in Lab 1.
 
 ## User Stories
 The following user stories **must** be completed:
@@ -19,6 +19,7 @@ The following user stories **must** be completed:
 
 ## Advanced
 The following advanced user stories are **optional**. You are not required to do these, but you will learn more from doing them: 
+* [ ] Add favicon to the page
 * [ ] Bootstrap carousel for banner
 * [ ] Banner with background video
 * [ ] Animation on an element
