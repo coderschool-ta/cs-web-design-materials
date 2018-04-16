@@ -25,7 +25,7 @@ Alternatively, there are also online Text Editors that let you write code in the
 
 Throughout the course, I will be using mainly Visual Studio Code and CodePen for code demostration.
 
-## Milestone 2: Create 2 files: index.html and style.css, and link them together
+## Milestone 2: Create index.html and style.css files, and link them together
 * First, create a folder named `spotify`
 * In the folder that you just created, create 2 empty files `index.html` and `style.css` 
 * In the `index.html`, add the following code: 
@@ -80,19 +80,21 @@ In the `style.css`, add the following code:
 #color-2 { height: 750px; background-color: pink; position: relative; }
 #footer { height: 500px; background-color: black; position: relative; }
 ```
-**Explanation:** I give a `height` and a `background-color` to distinguish each div container. I also set the position from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
+**Explanation:** I give a `height` and a `background-color` to distinguish each div container. I also set the `position` from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
+**Question:** Using either `position: relative` or `position: absolute` will allow child elements to move around inside the parent container based on the parent container's position. Here, what is the difference between `relative` and `absolute` in this case? What happens if I use `position: absolute` for these containers instead?
+
 Save and reload the index.html file on your Chrome browser. Now you can see 7 different containers layed out one on top of another.
 
 <img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
 
 ## Milestone 4: Create the top navigation bar
 The top navigation bar has the following properties: 
-* Spotify logo on left
-* Horizontal list of hyperlink on top right
+* Spotify logo on top left
+* Horizontal list of hyperlinks on top right
 * Fixed position on top of the page
 * Transparent background color
-In this milestone, I'll walk you through on how to implement the first 3. The last property you can try to implement yourself (hint: google 'transparent background css')
-# Spotify logo on left
+In this milestone, I'll walk you through on how to implement the first two. The last property you can try to implement yourself (hint: google 'transparent background css')
+# Spotify logo on top left
 There is a trick to get all images on a website:
   <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
   1. On Chrome, go to https://www.spotify.com/vn-en/
@@ -111,16 +113,61 @@ There is a trick to get all images on a website:
   </div>
   ```
   11. Save the `index.html` file and reload the page on Chrome. Notice that the logo doesn't have the right size and right location.
-  12. In the `style.css`, add the following code to style the Spotify logo:
+  12. In the `style.css`, add the following code at the bottom to style the Spotify logo:
   ```css
   #navbar .spotify-logo {
-    width: 170px;
-    position: relative;
+    width: 132px;
+    position: absolute;
     top: 20px;
     left: 20%;
   }
   ```
   **Explanation:** I apply `170px` to the `width` property of the logo. I also changed the position of the logo from `static` (default) to `absolute`. This position setting allows me to move the logo around using `top`, `right`, `left`, and `bottom` properties based on the parent container's position which is the `#navbar div`. Here, I moved the logo from the top by `20px`, and from the left by `20%`.
+  **Question:** What is the difference between `px` and `%`?
+# Horizontal list of hyperlinks on top right
+  1. In the `index.html` file, add a list of hyperlinks into the `#navbar`. It should look like this:
+  ```html
+  <div id="navbar"> 
+    <img class="spotify-logo" src="img/spotify-logo.svg" alt="spotify-logo">
+    <ul>
+      <li><a href="">Premium</a></li>
+      <li><a href="">Help</a></li>
+      <li><a href="">Download</a></li>
+      <li><a>|</a></li>
+      <li><a href="">Sign up</a></li>
+      <li><a href="">Log In</a></li>
+    </ul>  
+  </div>
+  ```
+  Notice that this is an unordered vertical list of hyperlinks. Each of the hyperlinks has a defaut style: *blue color* and *underlined*. We need to change the style for this list.
+  2. In the `style.css` file, add the following code at the bottom:
+  ```css
+  #navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  ```
+  This css code changes the style of all hyperlinks in the `#navbar` container: *white color* and *no underline*.
+  3. Next, add the following at the bottom:
+  ```css
+  #navbar ul li {
+    display: inline;
+    margin: 15px;
+  }
+  ```
+  `display: inline;` changes the direction of the list from vertical to horizontal, and `margin: 30px;` adds extra space between each of the hyperlink.
+  4. Now, we need to re-locate the list by moving the whole list to the right. Add the following code:
+  ```css
+  ul {
+    position: absolute;
+    top: 15px;
+    right: 20%;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  ```
+  Bam! Now you got the horizontal list of hyperlinks on top right. 
+  **Note:** you might need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
