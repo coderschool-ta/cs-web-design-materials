@@ -25,7 +25,7 @@ Alternatively, there are also online Text Editors that let you write code in the
 
 Throughout the course, I will be using mainly **Visual Studio Code** and **CodePen** for code demostration.
 
-## Milestone 2: Create index.html and style.css files, and link them together
+## Milestone 2: Link style.css file to index.html file
   1. Create a folder named `spotify`
   2. In the folder that you just created, create 2 empty files `index.html` and `style.css` 
   3. In the `index.html`, add the following code: 
@@ -41,7 +41,7 @@ Throughout the course, I will be using mainly **Visual Studio Code** and **CodeP
   </html>
   ```
   **Explanation:** This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
-  * Now, link the `style.css` with the `index.html` file by adding this code into the html file, below the `<title>` tag:
+  Now, link the `style.css` with the `index.html` file by adding this code into the html file, below the `<title>` tag:
   ```html
   <link rel="stylesheet" href="style.css">
   ```
@@ -89,6 +89,7 @@ Save and reload the index.html file on your Chrome browser. Now you can see 7 di
 
 ## Milestone 4: Create the top navigation bar
 <img src='https://i.imgur.com/Jzp39Q3.png' alt='top nav bar full' />
+
 The top navigation bar has four requirements: 
   * Spotify logo on top left
   * Horizontal list of hyperlinks on top right
