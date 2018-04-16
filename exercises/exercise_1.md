@@ -94,7 +94,7 @@ The top navigation bar has the following properties:
 * Fixed position on top of the page
 * Transparent background color
 In this milestone, I'll walk you through on how to implement the first two. The last property you can try to implement yourself (hint: google 'transparent background css')
-# Spotify logo on top left
+### Spotify logo on top left
 There is a trick to get all images on a website:
   <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
   1. On Chrome, go to https://www.spotify.com/vn-en/
@@ -124,7 +124,7 @@ There is a trick to get all images on a website:
   ```
   **Explanation:** I apply `170px` to the `width` property of the logo. I also changed the position of the logo from `static` (default) to `absolute`. This position setting allows me to move the logo around using `top`, `right`, `left`, and `bottom` properties based on the parent container's position which is the `#navbar div`. Here, I moved the logo from the top by `20px`, and from the left by `20%`.
   **Question:** What is the difference between `px` and `%`?
-# Horizontal list of hyperlinks on top right
+### Horizontal list of hyperlinks on top right
   1. In the `index.html` file, add a list of hyperlinks into the `#navbar`. It should look like this:
   ```html
   <div id="navbar"> 
