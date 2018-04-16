@@ -40,7 +40,7 @@ Throughout the course, I will be using mainly Visual Studio Code and CodePen for
   </body>
 </html>
 ```
-This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
+**Explanation:** This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
 * Now, link the `style.css` with the `index.html` file by adding this code into the html file, below the `<title>` tag:
 ```html
 <link rel="stylesheet" href="style.css">
@@ -80,7 +80,7 @@ In the `style.css`, add the following code:
 #color-2 { height: 750px; background-color: pink; position: relative; }
 #footer { height: 500px; background-color: black; position: relative; }
 ```
-Explanation: I give a `height` and a `background-color` to distinguish each div container. I also set the position from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
+**Explanation:** I give a `height` and a `background-color` to distinguish each div container. I also set the position from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
 Save and reload the index.html file on your Chrome browser. Now you can see 7 different containers layed out one on top of another.
 
 <img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
@@ -120,7 +120,7 @@ There is a trick to get all images on a website:
     left: 20%;
   }
   ```
-  Explanation: In the code, I apply `170px` to the `width` property of the logo. I also changed the position of the logo from `static` (default) to `absolute`. This position setting allows me to move the logo using `top`, `right`, `left`, and `bottom` properties based on the parent container's position which is the `#navbar div` 
+  **Explanation:** I apply `170px` to the `width` property of the logo. I also changed the position of the logo from `static` (default) to `absolute`. This position setting allows me to move the logo around using `top`, `right`, `left`, and `bottom` properties based on the parent container's position which is the `#navbar div`. Here, I moved the logo from the top by `20px`, and from the left by `20%`.
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
