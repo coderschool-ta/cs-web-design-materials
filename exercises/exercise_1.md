@@ -72,14 +72,15 @@ Now, there are 7 distinct containers layed out in the html file.
 Now, give them some styling by giving height and background color to each of the container:
 In the `style.css`, add the following code:
 ```css
-#navbar { height: 80px; background-color: black }
-#banner { height: 660px; background-color: pink }
-#white-1 { height: 650px; background-color: white }
-#color-1 { height: 600px; background-color: pink }
-#white-2 { height: 510px; background-color: white }
-#color-2 { height: 750px; background-color: pink }
-#footer { height: 500px; background-color: black }
+#navbar { height: 80px; background-color: black; position: relative; }
+#banner { height: 660px; background-color: pink; position: relative; }
+#white-1 { height: 650px; background-color: white; position: relative; }
+#color-1 { height: 600px; background-color: pink; position: relative; }
+#white-2 { height: 510px; background-color: white; position: relative; }
+#color-2 { height: 750px; background-color: pink; position: relative; }
+#footer { height: 500px; background-color: black; position: relative; }
 ```
+Explanation: I give a `height` and a `background-color` to distinguish each div container. I also set the position from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
 Save and reload the index.html file on your Chrome browser. Now you can see 7 different containers layed out one on top of another.
 
 <img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
@@ -93,19 +94,33 @@ The top navigation bar has the following properties:
 In this milestone, I'll walk you through on how to implement the first 3. The last property you can try to implement yourself (hint: google 'transparent background css')
 # Spotify logo on left
 There is a trick to get all images on a website:
+  <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
   1. On Chrome, go to https://www.spotify.com/vn-en/
   2. Right click anywhere on the webpage and choose `Inspect`
   3. On the `Network` tab, choose `Img` as your filter
   4. Click Cmd+R or Ctrl+R to reload the page (this will reload all the images)
   5. Go through the list of image names at the bottom-left panel until you find out the Spotify logo
-  <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
   6. Right click on the image on the bottom-right panel and choose `Save...`
   7. Now, you have downloaded the Spotify logo in your local computer
   8. Rename it to `spotify-logo.svg`
   9. In the `spotify` folder, create another folder named `img` and put the spotify logo in there. This new folder is the place to store any image that you use for your website.
-  10. Reference the 
-
-
+  10. Add this line of code inside your `#navbar` to add the Spotify logo
+  ```html
+  <div id="navbar">
+    <img class="spotify-logo" src="img/spotify-logo.svg" alt="spotify-logo">
+  </div>
+  ```
+  11. Save the `index.html` file and reload the page on Chrome. Notice that the logo doesn't have the right size and right location.
+  12. In the `style.css`, add the following code to style the Spotify logo:
+  ```css
+  #navbar .spotify-logo {
+    width: 170px;
+    position: relative;
+    top: 20px;
+    left: 20%;
+  }
+  ```
+  Explanation: In the code, I apply `170px` to the `width` property of the logo. I also changed the position of the logo from `static` (default) to `absolute`. This position setting allows me to move the logo using `top`, `right`, `left`, and `bottom` properties based on the parent container's position which is the `#navbar div` 
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
