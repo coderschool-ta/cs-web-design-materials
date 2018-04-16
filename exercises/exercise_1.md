@@ -96,8 +96,8 @@ Now you can see 7 different containers layed out one on top of another.
 The top navigation bar has four requirements: 
   * Spotify logo on top left
   * Horizontal list of hyperlinks on top right
-  * Fixed position on top of the page
-  * Transparent background color
+  * Fixed position on top of the page (BONUS)
+  * Transparent background color (BONUS)
 
 In this milestone, I'll walk you through on how to implement the first two. 
 The last two requirements you can try to implement yourself (hint: google 'fixed position css' and 'transparent background css').
@@ -188,8 +188,8 @@ The hero banner need to satisfy the following requirements:
 * Bubble background image
 * Center large white text
 * Green 'FREE' button
-* Transparent 'PREMIUM' button
-* Less than and larger than signs on the sides
+* Transparent 'PREMIUM' button (BONUS)
+* Less than and larger than signs on the sides (BONUS)
 
 In this milestone, I'll walk you through the top three. The last two requirements you can try to implement yourself.
 ### Linear-gradient background
