@@ -69,9 +69,6 @@ In the `index.html`, add the following code inside the `<body>` tag to add the 7
 Each of the container has their own id/name and the name should be easy to understand.
 Now, there are 7 distinct containers layed out in the html file.
 
-<img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
-
-
 Now, give them some styling by giving height and background color to each of the container:
 In the `style.css`, add the following code:
 ```css
@@ -83,8 +80,9 @@ In the `style.css`, add the following code:
 #color-2 { height: 750px; background-color: pink }
 #footer { height: 500px; background-color: black }
 ```
-
 Save and reload the index.html file on your Chrome browser. Now you can see 7 different containers layed out one on top of another.
+
+<img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
 
 ## Milestone 4: Create the top navigation bar
 The top navigation bar has the following properties: 
@@ -100,7 +98,6 @@ There is a trick to get all images on a website:
   3. On the `Network` tab, choose `Img` as your filter
   4. Click Cmd+R or Ctrl+R to reload the page (this will reload all the images)
   5. Go through the list of image names at the bottom-left panel until you find out the Spotify logo
-  
   <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
   6. Right click on the image on the bottom-right panel and choose `Save...`
   7. Now, you have downloaded the Spotify logo in your local computer
