@@ -39,12 +39,12 @@ Throughout the course, I will be using mainly Visual Studio Code and CodePen for
   </body>
 </html>
 ```
-This is the first skeleton of the HTML file. The <!DOCTYPE html> declaration means that the HTML file is HTML 5. The <title> tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
-* Now, link the style.css with the index.html file by adding this code into the html file, below the <title> tag:
+This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
+* Now, link the style.css with the index.html file by adding this code into the html file, below the `<title>` tag:
 ```html
 <link rel="stylesheet" href="style.css">
 ```
-This line of code has to be within the <head> tag.
+This line of code has to be within the `<head>` tag.
 
 ## Milestone 3: Layout all the parent containers
 Spotify landing page has 7 parent containers from top to bottom:
@@ -55,7 +55,7 @@ Spotify landing page has 7 parent containers from top to bottom:
 5. Second white container (white-2)
 6. Second color container (color-2)
 7. Footer
-In the index.html, add the following code inside the <body> tag to add the 7 containers:
+In the index.html, add the following code inside the `<body>` tag to add the 7 containers:
 ```html
   <div id="navbar"> </div>
   <div id="banner"> </div>
@@ -88,10 +88,6 @@ The top navigation bar has the following properties:
 * Horizontal list of hyperlink on top right
 * Fixed position on top of the page
 * Transparent background color
-
-
-
-
 
 ## Other Resources
 * [Chrome](https://www.google.com/chrome/browser/features.html) - the most popular web browser
