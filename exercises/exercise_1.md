@@ -88,9 +88,14 @@ The top navigation bar has the following properties:
 * Horizontal list of hyperlink on top right
 * Fixed position on top of the page
 * Transparent background color
+In this milestone, I'll walk you through on how to implement the first 3. The last property you can try to implement yourself (hint: google 'transparent background css')
+1. Spotify logo on left
+There is a trick to get any image on a website. On Chrome, right click on the webpage and choose 'Inspect'. 
 
 ## Other Resources
-* [Chrome](https://www.google.com/chrome/browser/features.html) - the most popular web browser
-* [Visual Studio Code](https://code.visualstudio.com/download) - a powerful text editor with a lot of useful plugins
-
-
+Tools that will help you with designing and developing the landing page:
+1. Prettier plugin for VSCode - format and make your code looks prettier
+2. ColorZilla plugin for Chrome - detect a pixel color from any page
+3. WhatFont plugin for Chrome - detect a font on any page
+4. Pesticide plugin for Chrome - detect and outline each element to better see their placements on the page
+5. Page Ruler plugin for Chrome - draw a ruler to get pixel dimensions and positioning
