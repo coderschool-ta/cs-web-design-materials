@@ -56,6 +56,7 @@ Spotify landing page has 7 parent containers from top to bottom:
   5. Second white container (white-2)
   6. Second color container (color-2)
   7. Footer
+
 In the `index.html`, add the following code inside the `<body>` tag to add the 7 containers:
   ```html
   <div id="navbar"> </div>
@@ -81,9 +82,11 @@ In the `style.css`, add the following code:
   #footer { height: 500px; background-color: black; position: relative; }
   ```
 **Explanation:** I give a `height` and a `background-color` to distinguish each div container. I also set the `position` from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
+
 **Question:** Using either `position: relative` or `position: absolute` will allow child elements to move around inside the parent container based on the parent container's position. Here, what is the difference between `relative` and `absolute` in this case? What happens if I use `position: absolute` for these containers instead?
 
-Save and reload the index.html file on your Chrome browser. Now you can see 7 different containers layed out one on top of another.
+Save and reload the index.html file on your Chrome browser. 
+Now you can see 7 different containers layed out one on top of another.
 
 <img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
 
@@ -95,6 +98,7 @@ The top navigation bar has four requirements:
   * Horizontal list of hyperlinks on top right
   * Fixed position on top of the page
   * Transparent background color
+
 In this milestone, I'll walk you through on how to implement the first two. 
 The last two requirements you can try to implement yourself (hint: google 'fixed position css' and 'transparent background css').
 ### Spotify logo on top left
@@ -126,6 +130,7 @@ There is a trick to get all images on a website:
   }
   ```
   **Explanation:** I apply `170px` to the `width` property of the logo. I also changed the position of the logo from `static` (default) to `absolute`. This position setting allows me to move the logo around using `top`, `right`, `left`, and `bottom` properties based on the parent container's position which is the `#navbar div`. Here, I moved the logo from the top by `20px`, and from the left by `20%`.
+
   **Question:** What is the difference between `px` and `%`?
 ### Horizontal list of hyperlinks on top right
   1. In the `index.html` file, add a list of hyperlinks into the `#navbar`. It should look like this:
@@ -173,7 +178,7 @@ There is a trick to get all images on a website:
   ```
   Bam! Now you got the horizontal list of hyperlinks on top right. The top bar should look like below:
   <img src='https://i.imgur.com/gbAhUeb.png' alt='top nav bar' />
-  **Note:** You may need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen. Use Page Ruler plugin for Chrome to get the exact px.
+  **Note:** Depend on your lapton sreen, you may need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen. Use *Page Ruler plugin for Chrome* to get the exact px.
 
 ## Milestone 5: Create the hero banner
 <img src='https://i.imgur.com/qZCyX6C.png' alt='hero banner full' />
@@ -185,6 +190,7 @@ The hero banner need to satisfy the following requirements:
 * Green 'FREE' button
 * Transparent 'PREMIUM' button
 * Less than and larger than signs on the sides
+
 In this milestone, I'll walk you through the top three. The last two requirements you can try to implement yourself.
 ### Linear-gradient background
   1. On the Spotify original page, locate your mouse inside the banner. Right-click and select 'Inspect' to open the Chrome Developer Tools
@@ -198,6 +204,7 @@ In this milestone, I'll walk you through the top three. The last two requirement
   }
   ```
   Here you only need the 3rd property: `background: linear-gradient(#f037a5 -60%,#fae62d 140%);`
+
   4. Copy the 3rd property and replace the code with the pink background color in the `#banner` selector in your `style.css` file. The selector should look like this:
   ```css
   #banner {
@@ -217,6 +224,7 @@ In this milestone, I'll walk you through the top three. The last two requirement
   </div>
   ```
   Save and reload your page on Chrome. The image is added but it doesn't have the right size and position.
+
   4. In `style.css`, add the following code to correct the img size and position
   ```css
   #banner img {
@@ -239,7 +247,7 @@ In this milestone, I'll walk you through the top three. The last two requirement
   Save and reload the page. The image should look exactly like how it looks in the original Spotify landing page.
   <img src="https://i.imgur.com/3EVEUZW.png" alt="banner a">
   
-  **Note:** You may need to re-position your image using `top` and `left` property in the `#banner img` selector.
+  **Note:** Depend on your laptop screen, you may need to re-position your image using `top` and `left` property in the `#banner img` selector.
 ### Center large white text 
   1. In `index.html` file, add an h1 heading inside the banner container, give it an `id="title"`
   ```html
