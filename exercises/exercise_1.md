@@ -9,55 +9,55 @@ Below is a replica of Spotify Landing page that was developed using only HTML an
 
 ## Milestone 1: Setup environment
 At this point, you should have a working Text Editor that you are familiar with. Some of the most popular text editors are: 
-* [Visual Studio Code](https://code.visualstudio.com/download) (Recommended)
-* [Sublime Text](https://www.sublimetext.com/3)
-* [Atom](https://atom.io/)
-* [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html)
-* [Vim](https://www.vim.org/download.php)
-* [Emacs](https://www.gnu.org/software/emacs/)
-* [Brackets](http://brackets.io/)
+  * [Visual Studio Code](https://code.visualstudio.com/download) (Recommended)
+  * [Sublime Text](https://www.sublimetext.com/3)
+  * [Atom](https://atom.io/)
+  * [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html)
+  * [Vim](https://www.vim.org/download.php)
+  * [Emacs](https://www.gnu.org/software/emacs/)
+  * [Brackets](http://brackets.io/)
 
 Alternatively, there are also online Text Editors that let you write code in the browser and see the results instantly. Popular ones are:
-* [CodePen](https://codepen.io/) (Recommened)
-* [JSFiddle](https://jsfiddle.net/)
-* [CSS Deck](http://cssdeck.com/)
-* [JS Bin](http://jsbin.com/)
+  * [CodePen](https://codepen.io/) (Recommened)
+  * [JSFiddle](https://jsfiddle.net/)
+  * [CSS Deck](http://cssdeck.com/)
+  * [JS Bin](http://jsbin.com/)
 
-Throughout the course, I will be using mainly Visual Studio Code and CodePen for code demostration.
+Throughout the course, I will be using mainly **Visual Studio Code** and **CodePen** for code demostration.
 
 ## Milestone 2: Create index.html and style.css files, and link them together
-* First, create a folder named `spotify`
-* In the folder that you just created, create 2 empty files `index.html` and `style.css` 
-* In the `index.html`, add the following code: 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Music for everyone - Spotify</title>
-  </head>
-  <body>
-  </body>
-</html>
-```
-**Explanation:** This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
-* Now, link the `style.css` with the `index.html` file by adding this code into the html file, below the `<title>` tag:
-```html
-<link rel="stylesheet" href="style.css">
-```
-This line of code has to be within the `<head>` tag.
+  1. Create a folder named `spotify`
+  2. In the folder that you just created, create 2 empty files `index.html` and `style.css` 
+  3. In the `index.html`, add the following code: 
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Music for everyone - Spotify</title>
+    </head>
+    <body>
+    </body>
+  </html>
+  ```
+  **Explanation:** This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
+  * Now, link the `style.css` with the `index.html` file by adding this code into the html file, below the `<title>` tag:
+  ```html
+  <link rel="stylesheet" href="style.css">
+  ```
+  This line of code has to be within the `<head>` tag.
 
 ## Milestone 3: Layout all the parent containers
 Spotify landing page has 7 parent containers from top to bottom:
-1. Navigation bar
-2. Banner
-3. First white container (white-1)
-4. First color container (color-1)
-5. Second white container (white-2)
-6. Second color container (color-2)
-7. Footer
+  1. Navigation bar
+  2. Banner
+  3. First white container (white-1)
+  4. First color container (color-1)
+  5. Second white container (white-2)
+  6. Second color container (color-2)
+  7. Footer
 In the `index.html`, add the following code inside the `<body>` tag to add the 7 containers:
-```html
+  ```html
   <div id="navbar"> </div>
   <div id="banner"> </div>
   <div id="white-1"> </div>
@@ -65,21 +65,21 @@ In the `index.html`, add the following code inside the `<body>` tag to add the 7
   <div id="white-2"> </div>
   <div id="color-2"> </div>
   <div id="footer"> </div>
-```
+  ```
 Each of the container has their own id/name and the name should be easy to understand.
 Now, there are 7 distinct containers layed out in the html file.
 
 Now, give them some styling by giving height and background color to each of the container:
 In the `style.css`, add the following code:
-```css
-#navbar { height: 80px; background-color: black; position: relative; }
-#banner { height: 660px; background-color: pink; position: relative; }
-#white-1 { height: 650px; background-color: white; position: relative; }
-#color-1 { height: 600px; background-color: pink; position: relative; }
-#white-2 { height: 510px; background-color: white; position: relative; }
-#color-2 { height: 750px; background-color: pink; position: relative; }
-#footer { height: 500px; background-color: black; position: relative; }
-```
+  ```css
+  #navbar { height: 80px; background-color: black; position: relative; }
+  #banner { height: 660px; background-color: pink; position: relative; }
+  #white-1 { height: 650px; background-color: white; position: relative; }
+  #color-1 { height: 600px; background-color: pink; position: relative; }
+  #white-2 { height: 510px; background-color: white; position: relative; }
+  #color-2 { height: 750px; background-color: pink; position: relative; }
+  #footer { height: 500px; background-color: black; position: relative; }
+  ```
 **Explanation:** I give a `height` and a `background-color` to distinguish each div container. I also set the `position` from `static` (default) to `relative` for each div. This position setting allows me to move any child elements within each parent container based on the parent container position and not on the page itself.
 **Question:** Using either `position: relative` or `position: absolute` will allow child elements to move around inside the parent container based on the parent container's position. Here, what is the difference between `relative` and `absolute` in this case? What happens if I use `position: absolute` for these containers instead?
 
@@ -88,12 +88,14 @@ Save and reload the index.html file on your Chrome browser. Now you can see 7 di
 <img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
 
 ## Milestone 4: Create the top navigation bar
-The top navigation bar has the following properties: 
-* Spotify logo on top left
-* Horizontal list of hyperlinks on top right
-* Fixed position on top of the page
-* Transparent background color
-In this milestone, I'll walk you through on how to implement the first two. The last property you can try to implement yourself (hint: google 'transparent background css')
+<img src='https://i.imgur.com/Jzp39Q3.png' alt='top nav bar full' />
+The top navigation bar has four requirements: 
+  * Spotify logo on top left
+  * Horizontal list of hyperlinks on top right
+  * Fixed position on top of the page
+  * Transparent background color
+In this milestone, I'll walk you through on how to implement the first two. 
+The last two requirements you can try to implement yourself (hint: google 'fixed position css' and 'transparent background css').
 ### Spotify logo on top left
 There is a trick to get all images on a website:
   <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
@@ -166,8 +168,22 @@ There is a trick to get all images on a website:
     font-weight: 700;
   }
   ```
-  Bam! Now you got the horizontal list of hyperlinks on top right. 
-  **Note:** you might need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen
+  Bam! Now you got the horizontal list of hyperlinks on top right. The top bar should look like below:
+  <img src='https://i.imgur.com/gbAhUeb.png' alt='top nav bar' />
+  **Note:** you might need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen. Use Page Ruler plugin for Chrome to get the exact px.
+
+## Milestone 5: Create the hero banner
+<img src='https://i.imgur.com/qZCyX6C.png' alt='hero banner full' />
+The hero banner need to satisfy the following requirements:
+* Linear-gradient background
+* Bubble background image
+* Center large white text
+* Green 'FREE' button
+* Transparent 'PREMIUM' button
+* Less than and larger than signs on the sides
+In this milestone, I'll walk you through the top four. The last two requirements you can try to implement yourself.
+### Linear-gradient background
+
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
