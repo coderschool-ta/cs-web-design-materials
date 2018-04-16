@@ -269,9 +269,49 @@ In this milestone, I'll walk you through the top three. The last two requirement
   }
   ```
   Save and reload the page. The title text should be white and centered.
+
   **Bonus:** Apply the correct font-family for the title text
 ### Green 'FREE' button
-
+  1. In `index.html` file, add a button tag inside the banner container and give it a name `class="btn-free"`
+  ```html
+  <div id="banner">
+    <img src="img/hero-burst.svg" alt="hero-burst img">
+    <h1 id="title">Music for everyone.</h1>
+    <button class="btn-free">Get spotify free</button>
+  </div>
+  ```
+  2. Give it some styles
+  ```css
+  .btn-free {
+    background-color: #1db954;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 500px;
+    padding: 18px 40px 13px;
+    border: 2px solid rgba(50,205,50,.6);
+    text-transform: uppercase;
+  }
+  ```
+  You can use the *ColorZilla plugin for Chrome* to get the right green color for the button
+  3. Add some effect when mouse is hovered
+  ```css
+  .btn-free:hover {
+    cursor: pointer;
+    background-color: #1ed760;
+    transition-duration: .5s;
+  }
+  ```
+  4. Move it to the right location. Add the following properties to the `.btn-free` selector
+  ```css  
+    position: absolute;
+    left: 690px;
+    top: 380px;
+    font-size: 14px;
+    font-weight: 700px;
+  ```
+  **Note:** Depend on your laptop screen, you may need to re-position the button.
+  Your final result should look like this:
+  <img src="https://i.imgur.com/v2cl3Ca.png" alt="banner b">
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
