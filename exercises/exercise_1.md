@@ -143,6 +143,7 @@ There is a trick to get all images on a website:
   </div>
   ```
   Notice that this is an unordered vertical list of hyperlinks. Each of the hyperlinks has a defaut style: *blue color* and *underlined*. We need to change the style for this list.
+  
   2. In the `style.css` file, add the following code at the bottom:
   ```css
   #navbar a {
@@ -151,6 +152,7 @@ There is a trick to get all images on a website:
   }
   ```
   This css code changes the style of all hyperlinks in the `#navbar` container: *white color* and *no underline*.
+  
   3. Next, add the following at the bottom:
   ```css
   #navbar ul li {
@@ -171,10 +173,11 @@ There is a trick to get all images on a website:
   ```
   Bam! Now you got the horizontal list of hyperlinks on top right. The top bar should look like below:
   <img src='https://i.imgur.com/gbAhUeb.png' alt='top nav bar' />
-  **Note:** you might need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen. Use Page Ruler plugin for Chrome to get the exact px.
+  **Note:** You may need to change the values of `top`, `left`, and `right` of each element to make sure they are centered on the screen. Use Page Ruler plugin for Chrome to get the exact px.
 
 ## Milestone 5: Create the hero banner
 <img src='https://i.imgur.com/qZCyX6C.png' alt='hero banner full' />
+
 The hero banner need to satisfy the following requirements:
 * Linear-gradient background
 * Bubble background image
@@ -182,8 +185,84 @@ The hero banner need to satisfy the following requirements:
 * Green 'FREE' button
 * Transparent 'PREMIUM' button
 * Less than and larger than signs on the sides
-In this milestone, I'll walk you through the top four. The last two requirements you can try to implement yourself.
+In this milestone, I'll walk you through the top three. The last two requirements you can try to implement yourself.
 ### Linear-gradient background
+  1. On the Spotify original page, locate your mouse inside the banner. Right-click and select 'Inspect' to open the Chrome Developer Tools
+  2. On the `Elements` tab, look for a div "wrap" i.e. `<div class="wrap">`
+  3. Click on the div to open the corresponding styles on the right panel, and look for the selector `.wrap`
+  ```css
+  .index-homepage .wrap {
+    background-color: #f037a5;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(-60%,#f037a5),color-stop(140%,#fae62d));
+    background: linear-gradient(#f037a5 -60%,#fae62d 140%);
+  }
+  ```
+  Here you only need the 3rd property: `background: linear-gradient(#f037a5 -60%,#fae62d 140%);`
+  4. Copy the 3rd property and replace the code with the pink background color in the `#banner` selector in your `style.css` file. The selector should look like this:
+  ```css
+  #banner {
+    height: 660px;
+    background: linear-gradient(#f037a5 -60%,#fae62d 140%);background-color: pink;
+    position: relative;
+  }
+  ```
+  Save and reload your page on Chrome. Now you should get the same gradient background.
+### Bubble background image
+  1. Using the same trick to get all the images. This time, you want to look for a svg image named `hero-burst.svg`
+  2. Download and save it to your img directory (same place as where you saved your spotify logo)
+  3. Add the image to your banner container in `index.html`
+  ```html
+  <div id="banner">
+    <img src="img/hero-burst.svg" alt="hero-burst img">
+  </div>
+  ```
+  Save and reload your page on Chrome. The image is added but it doesn't have the right size and position.
+  4. In `style.css`, add the following code to correct the img size and position
+  ```css
+  #banner img {
+    width: 80%;
+    position: absolute;
+    left: 15%;
+    top: -85%;
+    z-index: 1;
+  }
+  ```
+  The image now has the right size and position. However, because its position was changed from `static` to `absolute`. The image is no longer contained inside the parent container `#banner`. It overflows into the top and bottom container. To fix this problem, add `overflow: hidden;` property to `#banner` selector to hide the overflow parts of the image. The selector should look like this:
+  ```css
+  #banner {
+    height: 660px;
+    background: linear-gradient(#f037a5 -60%,#fae62d 140%);
+    position: relative;
+    overflow: hidden;
+  }
+  ```
+  Save and reload the page. The image should look exactly like how it looks in the original Spotify landing page.
+  <img src="https://i.imgur.com/3EVEUZW.png" alt="banner a">
+  
+  **Note:** You may need to re-position your image using `top` and `left` property in the `#banner img` selector.
+### Center large white text 
+  1. In `index.html` file, add an h1 heading inside the banner container, give it an `id="title"`
+  ```html
+  <div id="banner">
+    <img src="img/hero-burst.svg" alt="hero-burst img">
+    <h1 id="title">Music for everyone.</h1>
+  </div>
+  ```
+  2. Now, we need to give some styles to the `#title`. Open your `style.css` and add the following to the bottom:
+  ```css
+  #banner #title {
+    color: white;
+    position: relative;
+    text-align: center;
+    top: 200px;
+    font-size: 80px;
+    font-weight: 900px;
+    letter-spacing: -0.04em;
+  }
+  ```
+  Save and reload the page. The title text should be white and centered.
+  **Bonus:** Apply the correct font-family for the title text
+### Green 'FREE' button
 
 
 ## Other Resources
