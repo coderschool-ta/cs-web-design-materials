@@ -25,9 +25,9 @@ Alternatively, there are also online Text Editors that let you write code in the
 Throughout the course, I will be using mainly Visual Studio Code and CodePen for code demostration.
 
 ## Milestone 2: Create 2 files: index.html and style.css, and link them together
-* First, create a folder named "spotify"
-* In the folder that you just created, create 2 empty files index.html and style.css 
-* In the index.html, add the following code: 
+* First, create a folder named `spotify`
+* In the folder that you just created, create 2 empty files `index.html` and `style.css` 
+* In the `index.html`, add the following code: 
 ```html
 <!DOCTYPE html>
 <html>
@@ -40,7 +40,7 @@ Throughout the course, I will be using mainly Visual Studio Code and CodePen for
 </html>
 ```
 This is the first skeleton of the HTML file. The `<!DOCTYPE html>` declaration means that the HTML file is HTML 5. The `<title>` tag defines a title in the browser toolbar, provides a title for the page when it is added to favorites, and displays a title for the page in search-engine results.
-* Now, link the style.css with the index.html file by adding this code into the html file, below the `<title>` tag:
+* Now, link the `style.css` with the `index.html` file by adding this code into the html file, below the `<title>` tag:
 ```html
 <link rel="stylesheet" href="style.css">
 ```
@@ -55,7 +55,7 @@ Spotify landing page has 7 parent containers from top to bottom:
 5. Second white container (white-2)
 6. Second color container (color-2)
 7. Footer
-In the index.html, add the following code inside the `<body>` tag to add the 7 containers:
+In the `index.html`, add the following code inside the `<body>` tag to add the 7 containers:
 ```html
   <div id="navbar"> </div>
   <div id="banner"> </div>
@@ -67,9 +67,11 @@ In the index.html, add the following code inside the `<body>` tag to add the 7 c
 ```
 Each of the container has their own id/name and the name should be easy to understand.
 Now, there are 7 distinct containers layed out in the html file. 
+<img src='https://i.imgur.com/zWROKej.png' alt='7 containers img' />
+
 
 Now, give them some styling by giving height and background color to each of the container:
-In the style.css, add the following code:
+In the `style.css`, add the following code:
 ```css
 #navbar { height: 80px; background-color: black }
 #banner { height: 660px; background-color: pink }
@@ -89,8 +91,21 @@ The top navigation bar has the following properties:
 * Fixed position on top of the page
 * Transparent background color
 In this milestone, I'll walk you through on how to implement the first 3. The last property you can try to implement yourself (hint: google 'transparent background css')
-1. Spotify logo on left
-There is a trick to get any image on a website. On Chrome, right click on the webpage and choose 'Inspect'. 
+# Spotify logo on left
+There is a trick to get all images on a website:
+  1. On Chrome, go to https://www.spotify.com/vn-en/
+  2. Right click anywhere on the webpage and choose `Inspect`
+  3. On the `Network` tab, choose `Img` as your filter
+  4. Click Cmd+R or Ctrl+R to reload the page (this will reload all the images)
+  5. Go through the list of image names at the bottom-left panel until you find out the Spotify logo
+  <img src='https://i.imgur.com/DkmNLKW.png' alt='Chrome Developer Tools' />
+  6. Right click on the image on the bottom-right panel and choose `Save...`
+  7. Now, you have downloaded the Spotify logo in your local computer
+  8. Rename it to `spotify-logo.svg`
+  9. In the `spotify` folder, create another folder named `img` and put the spotify logo in there. This new folder is the place to store any image that you use for your website.
+  10. Reference the 
+
+
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
