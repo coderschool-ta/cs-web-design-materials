@@ -265,7 +265,7 @@ In this milestone, I'll walk you through the top three. The last two requirement
     top: 200px;
     font-size: 80px;
     font-weight: 900px;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.04rem;
   }
   ```
   Save and reload the page. The title text should be white and centered.
@@ -311,7 +311,7 @@ In this milestone, I'll walk you through the top three. The last two requirement
   ```
   **Note:** Depend on your laptop screen, you may need to re-position the button.
   Your final result should look like this:
-  <img src="https://i.imgur.com/v2cl3Ca.png" alt="banner b">
+  <img src="https://i.imgur.com/uJdpfsa.png" alt="banner b">
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
