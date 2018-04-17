@@ -14,7 +14,7 @@ In week 1 lab, you will be able to build Spotify [landing page](https://www.spot
 <img src='https://i.imgur.com/Y0Wub3u.gif' alt='Spotify Demo' />
 
 # Assignment
-In your week 1 assignment, you will be able to build Grab [landing page](https://www.grab.com/vn/en/) from scratch.
+In week 1 assignment, you will be able to build Grab [landing page](https://www.grab.com/vn/en/) from scratch.
 
 # Resources 
 - Lecture Videos
