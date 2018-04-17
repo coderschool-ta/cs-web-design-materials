@@ -315,7 +315,7 @@ In this milestone, I'll walk you through the top three. The last two requirement
   Your final result should look like this:
   <img src="https://i.imgur.com/uJdpfsa.png" alt="banner b">
   
-  That should be it for your first lab! If you get up to this point, you can start calling yourself a web designer who can litteraly make a replica of any website from scratch! Your next step would be working on the *bonus* requirements and the remaining containers. The more time you spend working on the lab, the more proficient at web design you can be. Also, when you get stuck at anything for awhile, ask around! People will help you or, better yet, book an info session (https://calendly.com/coderschool/30min/04-03-2018) with me to go over the issue :)
+  That should be it for your first lab! If you get up to this point, you can start calling yourself a web designer who can litterally create a replica of any website from scratch! Your next step would be working on the bonus requirements and the remaining containers. The more time you spend working on the lab, the more proficient you can be at web design. Also, when you get stuck at something for awhile, ask around! People will help you or, better yet, book an info session (https://calendly.com/coderschool/30min/04-03-2018) with me to go over the issues :)
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
