@@ -2,9 +2,9 @@
 Welcome to CoderSchool's Web Design Bootcamp Course. We're excited to embark you on a new journey 
 in learning web development altogether!
 
-If you are here it's mean that either you are curious about the whole technology and the world wide web, or you want to learn a new skillset for your career development, or you want to work and think like an enigneer. Either way, we are glad that you are here with us now to take on this course together.
+If you are here it's mean that either you are curious about science behind the whole information technology (IT) and the *world wide web* thing, or you want to learn a new skillset for your career development, or you want to work and think like an enigneer. Either way, we are glad that you are here with us now to take on this course together.
 
-In the first week, you will learn the most common HTML elements and CSS attributes that make up a webpage. We will also go over the **CSS Box Model** and **CSS Positioning**. These two concepts are the most important that will literally help you laying out any design on the web. 
+In the first week, you will learn the most common HTML elements and CSS attributes that make up a webpage. We will also go over the **CSS Box Model** and **CSS Positioning**. These two concepts are the most important that will literally help you to lay out any designs on the web. 
 
 Get ready! Lots of these concepts are difficult and complicated but we'll just start by writing code. Don't worry if you don't understand absolutely everything - but feel free to ask questions!
 
