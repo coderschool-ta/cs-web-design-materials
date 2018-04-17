@@ -30,13 +30,14 @@ In week 1 assignment, you will be able to build Grab [landing page](https://www.
 - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [codecademy](https://www.codecademy.com/learn/learn-css)
 - [CSS positioning](https://css-tricks.com/almanac/properties/p/position/)
-3) [HTML5 new features](https://code.tutsplus.com/tutorials/28-html5-features-tips-and-techniques-you-must-know--net-13520)
-4) [CSS3 new features](http://webreference.com/authoring/css3/index-2.html)
-5) Recommended text editors
+3) Posts on HTML5 & CSS3
+- https://code.tutsplus.com/tutorials/28-html5-features-tips-and-techniques-you-must-know--net-13520
+- http://webreference.com/authoring/css3/index-2.html
+4) Recommended text editors
 - [Visual Studio Code](https://code.visualstudio.com/download) (Recommended)
 - [Sublime Text](https://www.sublimetext.com/3)
 - [Atom](https://atom.io/)
-6) Supporting tools for web dev
+5) Supporting tools for web dev
 - ColorZilla plugin for Chrome - detect a pixel color from any page
 - WhatFont plugin for Chrome - detect a font on any page
 - Pesticide plugin for Chrome - detect and outline each element to better see their placements on the page
