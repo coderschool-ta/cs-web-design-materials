@@ -235,6 +235,8 @@ In this milestone, I'll walk you through the top three. The last two requirement
     z-index: 1;
   }
   ```
+  **Note:** Property `z-index` is used when you want an element to be *in front* or *behind* another element. Try changing z-index to 0 or a negative number to see a difference!
+  
   The image now has the right size and position. However, because its position was changed from `static` to `absolute`. The image is no longer contained inside the parent container `#banner`. It overflows into the top and bottom container. To fix this problem, add `overflow: hidden;` property to `#banner` selector to hide the overflow parts of the image. The selector should look like this:
   ```css
   #banner {
@@ -312,6 +314,8 @@ In this milestone, I'll walk you through the top three. The last two requirement
   **Note:** Depend on your laptop screen, you may need to re-position the button.
   Your final result should look like this:
   <img src="https://i.imgur.com/uJdpfsa.png" alt="banner b">
+  
+  That should be it for your first lab! If you get up to this point, you can start calling yourself a web designer who can litteraly make a replica of any website from scratch! Your next step would be working on the *bonus* requirements and the remaining containers. The more time you spend working on the lab, the more proficient at web design you can be. Also, when you get stuck at anything for awhile, ask around! People will help you or, better yet, book an info session (https://calendly.com/coderschool/30min/04-03-2018) with me to go over the issue :)
 
 ## Other Resources
 Tools that will help you with designing and developing the landing page:
