@@ -28,6 +28,6 @@ The following advanced user stories are **optional**. You are not required to do
 ## Submission
 Submitted through GitHub, 
   * Be sure to **include a README** containing a GIF walkthrough of your app.
-  * Use [this README template](http://courses.codepath.com/snippets/intro_to_android/readme_templates/project_1_readme.md?raw=true) in order to have a complete README.
+  * Use [this README template](https://github.com/buihdk/cs-fed-materials/blob/master/project_1_template.md) in order to have a complete README.
 
 
