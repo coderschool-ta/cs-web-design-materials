@@ -20,14 +20,12 @@ The following user stories **must** be completed:
 ## Advanced
 The following advanced user stories are **optional**. You are not required to do these, but you will learn more from doing them: 
 * [ ] Add favicon to the page
-* [ ] Bootstrap carousel for banner
-* [ ] Banner with background video
 * [ ] Animation on an element
 * [ ] Navigation, contact, sitemap, privacy policy, term of use, etc in footer
+* [ ] Bootstrap carousel for banner
+* [ ] Banner with background video
 
 ## Submission
 Submitted through GitHub, 
   * Be sure to **include a README** containing a GIF walkthrough of your app.
   * Use [this README template](https://github.com/buihdk/cs-fed-materials/blob/master/project_1_template.md) in order to have a complete README.
-
-

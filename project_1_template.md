@@ -4,7 +4,7 @@ Time spent: **X** hours spent in total
 
 ## User Stories
 
-The following **required** functionality is completed:
+The following **required** functionalities are completed:
 
 * [ ] Top navigation bar with dropdown buttons
 * [ ] Banner with background image, white text, and a green button
@@ -16,10 +16,10 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [ ] Add favicon to the page
-* [ ] Bootstrap carousel for banner
-* [ ] Banner with background video
 * [ ] Animation on an element
 * [ ] Navigation, contact, sitemap, privacy policy, term of use, etc in footer
+* [ ] Bootstrap carousel for banner
+* [ ] Banner with background video
 
 The following **additional** features are implemented:
 
