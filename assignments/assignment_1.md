@@ -25,8 +25,9 @@ The following advanced user stories are **optional**. You are not required to do
 * [ ] Animation on an element
 * [ ] Navigation, contact, sitemap, privacy policy, term of use, etc in footer
 
-## Other Resources
-* [Chrome](https://www.google.com/chrome/browser/features.html) - the most popular web browser
-* [Visual Studio Code](https://code.visualstudio.com/download) - a powerful text editor with a lot of useful plugins
+## Submission
+Submitted through GitHub, 
+  * Be sure to **include a README** containing a GIF walkthrough of your app.
+  * Use [this README template](http://courses.codepath.com/snippets/intro_to_android/readme_templates/project_1_readme.md?raw=true) in order to have a complete README.
 
 
