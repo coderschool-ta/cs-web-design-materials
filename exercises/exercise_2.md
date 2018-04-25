@@ -101,10 +101,10 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   Save and reload your browser. Try resizing your page horizontally and see the logo changes when the *viewport* is smaller or larger.
   
 ## Milestone 4: Navbar - Responsive links on right
-  We got the left of the navbar, the only thing left is the navigation links on the right.
-  Even though the CoderSchool logo is responsive, the navbar itself is not responsive yet. To make it responsive, add the following class to the `<nav>` element: `.navbar-expand-lg`. 
-  Then, add `.navbar-light` to the `<nav>` to make the color easy to see.
-  Finally, add the following code inside the `<nav>` and below the hyperlink logo:
+  We got the left of the navbar, the only thing left is the navigation links on the right. Even though the CoderSchool logo is responsive, the navbar itself is not responsive yet. 
+  1. To make it responsive, add the following class to the `<nav>` element: `.navbar-expand-lg`. 
+  2. Then, add `.navbar-light` to the `<nav>` to make the color easy to see.
+  3. Finally, add the following code inside the `<nav>` and below the hyperlink logo:
   ```html
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -119,4 +119,6 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
     </ul>
   </div>
   ```
+  Save and reload your browser. Your navbar is now fully responsive!
   In the code about, there are two things: a `button` and a `div`. When the screen is `lg` (min-width: 992px), then the `div` is displayed with a list of horizontal hyperlinks. When the screen is smaller than 992px, then a hamburger `button` is shown instead. Clicking on the button will display the list of hyperlinks vertically.
+  
