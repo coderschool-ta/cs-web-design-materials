@@ -3,6 +3,7 @@
 ## Overview:
 In this lab, you will again *pair program* with another person to create a responsive CoderSchool Pricing Page using `Bootstrap v4.1`. The goal of this lab is to help you get familiar with all the popular Bootstrap components and utilities. By the end of this lab, you will be surprised of how much less code you need to write to make a responsive website with Bootstrap! 
 We will also go over [GitHub Pages](https://pages.github.com/) to help you publish your responsive webpage online.
+
 Final result: http://www.buihdk.com/pricing-bootstrap-example/
 
 ## Milestone 1: Add Bootstrap to your HTML file
@@ -66,6 +67,7 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   *  `.border-bottom` provides a border at the bottom of your element
   To understand exactly what styling has really been applied, you can inspect the element in Chrome Developer Tools by right-click on the element and choose 'Inspect'.
   <img src="https://i.imgur.com/D1aNyiH.png" alt="chrome dev tools">
+
   2. I also want to add a shadow to the navigation bar. However, the search terms "shadow" and "box shadow" don't provide me any result on Bootstrap website. I will have to come up with my own styling for the shadow.
   Add `.box-shadow` to the `<nav>` element.
   In the `style.css` file, add the following: 
@@ -84,6 +86,7 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
     </div>
   </nav>
   ```
+  
   4. Now, add a responsive image inside the container using [picture](https://www.w3schools.com/tags/tag_picture.asp) tag and wrap around it with an `<a>` tag to create a hyperlink on the image.
   ```html
   <a class="navbar-brand mr-auto" href="http://www.coderschool.vn/">
