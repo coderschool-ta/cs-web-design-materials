@@ -3,8 +3,7 @@
 ## Overview:
 In this lab, you will again *pair program* with another person to create a responsive CoderSchool Pricing Page using `Bootstrap v4.1`. The goal of this lab is to help you get familiar with all the popular Bootstrap components and utilities. By the end of this lab, you will be surprised of how much less code you need to write to make a responsive website with Bootstrap! 
 We will also go over [GitHub Pages](https://pages.github.com/) to help you publish your responsive webpage online.
-
-<img src='https://i.imgur.com/Y0Wub3u.gif' alt='Spotify Demo' />
+Final result: http://www.buihdk.com/pricing-bootstrap-example/
 
 ## Milestone 1: Add Bootstrap to your HTML file
   1. Create a folder named `responsive-with-bootstrap`
@@ -54,7 +53,7 @@ We will also go over [GitHub Pages](https://pages.github.com/) to help you publi
   The semantic tag names kind of tell us the purpose of each container. We no longer need to give each one of them a specific `id` name (unless you decide to have a second `header` or a second `section`).
   Next, add a CoderSchool favicon to your webpage using this url https://i.imgur.com/hViW80o.png (hint: use `<link>` in `<head>` tag). Feel free to add a different favicon and customize it to your own.
 
-## Milestone 3: Navbar again, but now we make it responsive
+## Milestone 3: Navbar - Responsive logo on left
   Let us start with our first container: `<nav>`
   The Bootstrap stylesheet applies styling on an element when the element is given a *Bootstrap class name*. 
   1. Now, give the following class names to your `<nav>` element:
@@ -95,6 +94,10 @@ We will also go over [GitHub Pages](https://pages.github.com/) to help you publi
     </picture>
   </a>
   ```
+  Save and reload your browser. Try resizing your page horizontally and see the logo changes when the *viewport* is smaller or larger.
+  
+## Milestone 4: Navbar - Responsive links on right
+  We got the left of the navbar, the only thing left is the navigation links on the right.
 
 
 
