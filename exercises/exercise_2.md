@@ -211,7 +211,8 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   ```
   Also, add `.d-flex` and `.flex-column` to `.card-body` to enable `flex` behavior vertically.
   This is what you should get now []
-  Do the same thing for React and Data cards. You can look here for more content http://www.buihdk.com/pricing-bootstrap-example/
+  Do the same thing for React and Data `.card-body`. You can look [here](http://www.buihdk.com/pricing-bootstrap-example/) for more content. 
+  
   Notice that the <ul> elements of 3 cards are at the same level horizontally. This is the work of `.mb-auto` on `<p>` tag and *flex vertically* on `.card-body`
   6. The last thing we need to work on now is the `.card-footer`. We want them to either 'Check out' the current courses or 'Learn more' on the upcoming courses. When they click on the 'Check out' button, we want to direct them to the Checkout form; and when they click on the 'Learn more' button, we want to direct them to another informative page.
   Add the following inside **Web Design** and **React** `.card-footer`
@@ -225,4 +226,5 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   The `target="_blank"` attribute will force the user to open the linked page in a new window or tab without closing the current window.
   Finally, add `.bg-danger` to `.card-footer` of all 3 cards to change the background color to fit with the button inside.
   
+  That should be it for the `<section>`! Save and reload the browser. Then, try to resize the screen and see how responsive the Bootstrap cards and the card deck are!
 
