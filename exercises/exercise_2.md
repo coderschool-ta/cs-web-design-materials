@@ -213,7 +213,7 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   This is what you should get now []
   Do the same thing for React and Data `.card-body`. You can look [here](http://www.buihdk.com/pricing-bootstrap-example/) for more content. 
 
-  Notice that the <ul> elements of 3 cards are at the same level horizontally. This is the work of `.mb-auto` on `<p>` tag and *flex vertically* on `.card-body`
+  Notice that the `<ul>` elements of 3 cards are at the same level horizontally. This is the work of `.mb-auto` on `<p>` tag and *flex vertically* on `.card-body`
   6. The last thing we need to work on now is the `.card-footer`. We want them to either 'Check out' the current courses or 'Learn more' on the upcoming courses. When they click on the 'Check out' button, we want to direct them to the Checkout form; and when they click on the 'Learn more' button, we want to direct them to another informative page.
   Add the following inside **Web Design** and **React** `.card-footer`
   ```html
