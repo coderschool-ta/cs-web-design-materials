@@ -228,7 +228,7 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   
   That should be it for the `<section>`! Save and reload the browser. Then, try to resize the screen and see how responsive the Bootstrap cards and the card deck are!
 
-## Milestone 7: Lists of hyperlinks in <footer>
+## Milestone 7: Lists of hyperlinks in `<footer>`
 Last but not least, the footer of the Pricing page. We want to include things like trademark, sitemap, contact, and policy here.
   1. First add these classes to the `<footer>` itself: **pt-4 my-md-5 pt-md-5 border-top**
   2. Now, we use Bootstrap default [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) to lay out the footer content. The layout order: `container` > `row` > `col`. If we want to present more complex content inside a `col`, we can have a nested `row` inside a `col` but never a nested `container` or another `col`. Sometimes, it can look like this `container` > `row` > `col` > `row` > `col`
@@ -264,7 +264,8 @@ Last but not least, the footer of the Pricing page. We want to include things li
   ```
   Save and reload the page. Then, do the same for the last two columns. Content can be found [here](http://www.buihdk.com/pricing-bootstrap-example/)
 
-  ## (Bonus) Milestone 8: Create a Responsive Checkout form 
-  Make a similar responsive Checkout form to this http://www.buihdk.com/pricing-bootstrap-example/checkout.html and link it with one of the buttons on the card deck.
+  ## (BONUS) Milestone 8: Create a Responsive Checkout form 
+  Make a responsive Checkout form similar to this http://www.buihdk.com/pricing-bootstrap-example/checkout.html 
+  and link it with one of the buttons on the card deck.
   
   That should be it for your second lab! Did you realize that you made a lot of styling today without even touching the `style.css` at all? And any changes to the existing styles can be as easy as changing a class name (e.g. changing background color from red to blue by changing `.bg-danger` to `.bg-primary`). This is why Bootstrap is so powerful and is widely used in most of the websites nowsadays.
