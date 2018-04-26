@@ -13,12 +13,12 @@ For inspiration, check out this website for more Blog examples: https://www.wix.
 The following user stories **must** be completed:
 * [ ] Responsive for any screen (desktop, laptop, tablet, phone) with Bootstrap
 * [ ] Have at least 2 pages:
-    * 1 main overview page (index.html) like the [example](https://getbootstrap.com/docs/4.1/examples/blog/)
+    * 1 main overview page (index.html) like the Bootstrap [blog example](https://getbootstrap.com/docs/4.1/examples/blog/)
     * 1 blog page with at least a picture. If you don't have any picture, you can use https://placeholder.com/ for img and https://www.lipsum.com/ for dummy text
-* [ ] Use HTML5 sematic elements for page layout (https://www.w3schools.com/html/html5_semantic_elements.asp)
-* [ ] Use Bootstrap grid system (container > row > col) to layout and align content.
+* [ ] Use [HTML5 sematic elements](https://www.w3schools.com/html/html5_semantic_elements.asp) for page layout (less divs!)
+* [ ] Use Bootstrap [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) (container > row > col) to layout and align content.
 * [ ] At least 2 [cards](https://getbootstrap.com/docs/4.1/components/card/) for featured posts
-* [ ] Navigation (https://getbootstrap.com/docs/4.0/components/navbar/) on header and social icons on footer (use https://fontawesome.com/icons for icons)
+* [ ] Navigation(https://getbootstrap.com/docs/4.0/components/navbar/) on header and social icons on footer (use https://fontawesome.com/icons for icons)
 * [ ] Site navigation `<aside>` that includes an Archives list
 
 ## Tips
@@ -30,7 +30,7 @@ The following advanced user stories are **optional**. You are not required to do
 * [ ] Use [button group](https://getbootstrap.com/docs/4.1/components/button-group/) or [pagination](https://getbootstrap.com/docs/4.1/components/pagination/) to navigate between pages.
 * [ ] Add a [modal](https://getbootstrap.com/docs/4.1/components/modal/) component (e.g. when clicing on 'Sign up' or 'Search' button)
 * [ ] Include a 'Get in touch' [form](https://getbootstrap.com/docs/4.1/components/forms/) for guests to submit enquiries
-* [ ] Add a [dropdown] (https://getbootstrap.com/docs/4.1/components/dropdowns/) on top navigation
+* [ ] Add a [dropdown](https://getbootstrap.com/docs/4.1/components/dropdowns/) on top navigation
 
 ## Submission
 Submitted through GitHub, 
