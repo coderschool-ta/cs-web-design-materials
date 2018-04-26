@@ -18,7 +18,7 @@ The following user stories **must** be completed:
 * [ ] Use [HTML5 sematic elements](https://www.w3schools.com/html/html5_semantic_elements.asp) for page layout (less divs!)
 * [ ] Use Bootstrap [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) (container > row > col) to layout and align content.
 * [ ] At least 2 [cards](https://getbootstrap.com/docs/4.1/components/card/) for featured posts
-* [ ] Navigation(https://getbootstrap.com/docs/4.0/components/navbar/) on header and social icons on footer (use https://fontawesome.com/icons for icons)
+* [ ] [Navigation](https://getbootstrap.com/docs/4.0/components/navbar/) on header and social icons on footer (use https://fontawesome.com/icons for icons)
 * [ ] Site navigation `<aside>` that includes an Archives list
 
 ## Tips
