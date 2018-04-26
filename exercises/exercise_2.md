@@ -1,11 +1,11 @@
 # Week 2 Lab: Build a Responsive Pricing Page with Bootstrap
 
 ## Overview:
-In this lab, you will again *pair program* with another person to create a responsive CoderSchool Pricing Page using `Bootstrap v4.1`. The goal of this lab is to help you get familiar with all the popular Bootstrap components and utilities. By the end of this lab, you will be surprised of how much less code you need to write to make a responsive website with Bootstrap! 
+In this lab, you will again *pair program* with another person to create a responsive [CoderSchool Pricing Page](http://www.buihdk.com/pricing-bootstrap-example/) using `Bootstrap v4.1`. The goal of this lab is to help you get familiar with all the popular Bootstrap components and utilities. By the end of this lab, you will be surprised of how much less code you need to write to make a responsive website with Bootstrap! 
 
-We will also go over [GitHub Pages](https://pages.github.com/) to help you publish your responsive webpage online.
+Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.com/) to help you publish your responsive webpages online.
 
-Final result: http://www.buihdk.com/pricing-bootstrap-example/
+<img src="https://i.imgur.com/FFk8OtA.gif" alt="CoderSchool Pricing Page">
 
 ## Milestone 1: Add Bootstrap to your HTML file
   1. Create a folder named `responsive-with-bootstrap`
@@ -210,7 +210,8 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   </h3>
   ```
   Also, add `.d-flex` and `.flex-column` to `.card-body` to enable `flex` behavior vertically.
-  This is what you should get now []
+  This is what you should get now 
+  <img src="https://i.imgur.com/gtr6UIR.png" alt="result">
   Do the same thing for React and Data `.card-body`. You can look [here](http://www.buihdk.com/pricing-bootstrap-example/) for more content. 
 
   Notice that the `<ul>` elements of 3 cards are at the same level horizontally. This is the work of `.mb-auto` on `<p>` tag and *flex vertically* on `.card-body`
