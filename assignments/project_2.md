@@ -5,7 +5,9 @@
 ## Overview
 Your assignment for this week will be building a **responsive personal Blog**. You will only need to use HTML, CSS, and Bootstrap to build.
 
-To start laying out your content, you can take a look at the responsive Blog template built by Bootstrap: https://getbootstrap.com/docs/4.1/examples/blog/. Go to the website, and right-click on the page to 'View Page Source'. Now, take a look at all the html elements inside the `<body>` with their bootstrap classes. Also, you might want check out the external references such as stylesheets and Google fonts in `<head>`, and scripts near the end of `<body>` to understand more about the page.
+To start laying out your content, you can take a look at the responsive Blog template built by Bootstrap: https://getbootstrap.com/docs/4.1/examples/blog/. 
+
+Go to the website, and right-click on the page to 'View Page Source'. Then, have a look through at all the html elements inside the `<body>` with their bootstrap classes. Also, check out the external references such as stylesheets and Google fonts in `<head>`; and scripts near the end of `<body>` to understand more about the page.
 
 For inspiration, check out this website for more Blog examples: https://www.wix.com/website/templates?criteria=blog
 
@@ -22,7 +24,7 @@ The following user stories **must** be completed:
 * [ ] Site navigation `<aside>` that includes an Archives list
 
 ## Tips
-* Your blog should look tailored and personal to you. You don't have to follow exactly the Bootstrap blog as long as you complete all the *required* user stories.
+* Your blog should be **tailored** and **personal** to you. You don't have to follow exactly the Bootstrap blog as long as you complete all the *required* user stories.
 * List out all the additional things that you have added to your personal blog
 
 ## Advanced
