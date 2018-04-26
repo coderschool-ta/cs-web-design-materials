@@ -212,7 +212,7 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   Also, add `.d-flex` and `.flex-column` to `.card-body` to enable `flex` behavior vertically.
   This is what you should get now []
   Do the same thing for React and Data `.card-body`. You can look [here](http://www.buihdk.com/pricing-bootstrap-example/) for more content. 
-  
+
   Notice that the <ul> elements of 3 cards are at the same level horizontally. This is the work of `.mb-auto` on `<p>` tag and *flex vertically* on `.card-body`
   6. The last thing we need to work on now is the `.card-footer`. We want them to either 'Check out' the current courses or 'Learn more' on the upcoming courses. When they click on the 'Check out' button, we want to direct them to the Checkout form; and when they click on the 'Learn more' button, we want to direct them to another informative page.
   Add the following inside **Web Design** and **React** `.card-footer`
@@ -228,3 +228,43 @@ Final result: http://www.buihdk.com/pricing-bootstrap-example/
   
   That should be it for the `<section>`! Save and reload the browser. Then, try to resize the screen and see how responsive the Bootstrap cards and the card deck are!
 
+## Milestone 7: Lists of hyperlinks in <footer>
+Last but not least, the footer of the Pricing page. We want to include things like trademark, sitemap, contact, and policy here.
+  1. First add these classes to the `<footer>` itself: **pt-4 my-md-5 pt-md-5 border-top**
+  2. Now, we use Bootstrap default [grid system](https://getbootstrap.com/docs/4.0/layout/grid/) to lay out the footer content. The layout order: `container` > `row` > `col`. If we want to present more complex content inside a `col`, we can have a nested `row` inside a `col` but never a nested `container` or another `col`. Sometimes, it can look like this `container` > `row` > `col` > `row` > `col`
+  Add the following code inside the `<footer>` tag
+  ```html
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md"></div>
+      <div class="col-6 col-md"><h5>Features</h5></div>
+      <div class="col-6 col-md"><h5>Resources</h5></div>
+      <div class="col-6 col-md"><h5>About</h5></div>`
+    </div>
+  </div>
+  ```
+  Now, there is a `container` inside the `<footer>`. And within that `container`, there's a `row` that nested 4 `column`s.
+  3. Let's complete the first column. Add the following to the first col (the one with `col-12`):
+  ```html
+  <img class="mb-2" src="https://i.imgur.com/hViW80o.png" alt="" width="24" height="24">
+  <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+  ```
+  A bit of explanation here, when the screen is `md` or more (min-width: 768px), each of the four columns take a quarter (25%) of the full row. When the screen width is less than 768px, the first column will take the full width of the row where as each of the remaing three columns take a half (50%) of the full row.
+  4. Now, let's finish off the remaining three columns.
+  Add this to the 2nd column, right below the Feature heading
+  ```html
+  <ul class="list-unstyled text-small">
+    <li><a class="text-muted" href="#">Cool stuff</a></li>
+    <li><a class="text-muted" href="#">Random feature</a></li>
+    <li><a class="text-muted" href="#">Team feature</a></li>
+    <li><a class="text-muted" href="#">Stuff for developers</a></li>
+    <li><a class="text-muted" href="#">Another one</a></li>
+    <li><a class="text-muted" href="#">Last time</a></li>
+  </ul>
+  ```
+  Save and reload the page. Then, do the same for the last two columns. Content can be found [here](http://www.buihdk.com/pricing-bootstrap-example/)
+
+  ## (Bonus) Milestone 8: Create a Responsive Checkout form 
+  Make a similar responsive Checkout form to this http://www.buihdk.com/pricing-bootstrap-example/checkout.html and link it with one of the buttons on the card deck.
+  
+  That should be it for your second lab! Did you realize that you made a lot of styling today without even touching the `style.css` at all? And any changes to the existing styles can be as easy as changing a class name (e.g. changing background color from red to blue by changing `.bg-danger` to `.bg-primary`). This is why Bootstrap is so powerful and is widely used in most of the websites nowsadays.
