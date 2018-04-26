@@ -3,9 +3,9 @@
 ## Overview:
 In this lab, you will again *pair program* with another person to create a responsive [CoderSchool Pricing Page](http://www.buihdk.com/pricing-bootstrap-example/) using `Bootstrap v4.1`. The goal of this lab is to help you get familiar with all the popular Bootstrap components and utilities. By the end of this lab, you will be surprised of how much less code you need to write to make a responsive website with Bootstrap! 
 
-Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.com/) to help you publish your responsive webpages online.
+<img src="https://i.imgur.com/wXJLYpm.gif" alt="CoderSchool Pricing Page">
 
-<img src="https://i.imgur.com/FFk8OtA.gif" alt="CoderSchool Pricing Page">
+Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.com/) to help you publish your responsive webpages online.
 
 ## Milestone 1: Add Bootstrap to your HTML file
   1. Create a folder named `responsive-with-bootstrap`
@@ -269,4 +269,5 @@ Last but not least, the footer of the Pricing page. We want to include things li
   Make a responsive Checkout form similar to this http://www.buihdk.com/pricing-bootstrap-example/checkout.html 
   and link it with one of the buttons on the card deck.
   
+  <br>
   That should be it for your second lab! Did you realize that you made a lot of styling today without even touching the `style.css` at all? And any changes to the existing styles can be as easy as changing a class name (e.g. changing background color from red to blue by changing `.bg-danger` to `.bg-primary`). This is why Bootstrap is so powerful and is widely used in most of the websites nowsadays.
