@@ -53,7 +53,18 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
   You may want the `header` (or `footer`) element nested inside the `section` element instead if you want to start out with just 3 containers.
   Now, we have 4 distinct empty containers. If you open the `index.html` now on a web browser, you still see a blank page because there is still no content on the page. 
   The semantic tag names kind of tell us the purpose of each container. We no longer need to give each one of them a specific `id` name (unless you decide to have a second `header` or a second `section`).
+  
   Next, add a CoderSchool favicon to your webpage using this url https://i.imgur.com/hViW80o.png (hint: use `<link>` in `<head>` tag). Feel free to add a different favicon and customize it to your own.
+  
+  Finally, in your `style.css`, add the following:
+  ```css
+  * { font-size: 14px; }
+
+  @media (min-width: 768px) {
+    * { font-size: 16px; }
+  }
+  ```
+  The asterisk(`*`) selector is called the **universal selector**. The styling specified by the `*` applies to everything on the html page.
 
 ## Milestone 3: Responsive logo on left `<nav>`
   Let us start with our first container: `<nav>`
@@ -229,7 +240,13 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
   <a class="btn btn-lg btn-danger" href="http://courses.coderschool.vn/data-science" target="_blank">Learn more</a>
   ```
   The `target="_blank"` attribute will force the user to open the linked page in a new window or tab without closing the current window.
-  Finally, add `.bg-danger` to `.card-footer` of all 3 cards to change the background color to fit with the button inside.
+  
+  Finally, add `.bg-danger` to `.card-footer` of all 3 cards to change the background color to fit with the button inside, and specify the `min-width` for each of the card in `style.css` file so they won't be too thin:
+  ```css
+  .card-deck .card {
+    min-width: 220px;
+  }
+  ```
   
   That should be it for the `<section>`! Save and reload the browser. Then, try to resize the screen and see how responsive the Bootstrap cards and the card deck are!
 
