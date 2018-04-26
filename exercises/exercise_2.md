@@ -55,7 +55,7 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
   The semantic tag names kind of tell us the purpose of each container. We no longer need to give each one of them a specific `id` name (unless you decide to have a second `header` or a second `section`).
   Next, add a CoderSchool favicon to your webpage using this url https://i.imgur.com/hViW80o.png (hint: use `<link>` in `<head>` tag). Feel free to add a different favicon and customize it to your own.
 
-## Milestone 3: Responsive logo on left <nav>
+## Milestone 3: Responsive logo on left `<nav>`
   Let us start with our first container: `<nav>`
   The Bootstrap stylesheet applies styling on an element when the element is given a *Bootstrap class name*. 
   1. Now, give the following class names to your `<nav>` element:
@@ -102,11 +102,12 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
   ```
   Save and reload your browser. Try resizing your page horizontally and see the logo changes when the *viewport* is smaller or larger.
   
-## Milestone 4: Responsive links on right <nav>
+## Milestone 4: Responsive links on right `<nav>`
   We got the left of the navbar, the only thing left is the navigation links on the right. Even though the CoderSchool logo is responsive, the navbar itself is not responsive yet. 
   1. To make it responsive, add the following class to the `<nav>` element: `.navbar-expand-lg`. 
   2. Then, add `.navbar-light` to the `<nav>` to make the color easy to see, and `.fixed-top` to make the navbar fixed at the top of the page.
   3. Finally, add the following code inside the `<nav>` and below the hyperlink logo:
+  
   ```html
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -121,6 +122,7 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
     </ul>
   </div>
   ```
+  
   Don't worry too much about the attributes inside the button for now. These are used to work with top navigation bar only.
   Quick explanation for some of the class:
   * `.ml-auto` applies **auto** to `margin-left`. This moves the navigation links to the right
@@ -130,7 +132,7 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
 
   In the code about, there are two things: a `button` and a `div`. When the screen is `lg` (min-width: 992px), then the `div` is displayed with a list of horizontal hyperlinks. When the screen is smaller than 992px, then a hamburger `button` is shown instead. Clicking on the button will display the list of hyperlinks vertically.
   
-## Milestone 5: Simple fix on the <header>
+## Milestone 5: Simple fix on the `<header>`
   There aren't much in the `<header>` tag compared to the `<nav>` tag and `<section>` tag.
   1. Add the following classes to the `<header>` tag
   ```html
@@ -160,7 +162,7 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
   ```
   Save and reload the browser, the text now fits nicely in the center.
 
-## Milestone 6: Add product cards to <section>
+## Milestone 6: Add product cards to `<section>`
   This is the fun part of the lab, we will add three different [cards](https://getbootstrap.com/docs/4.0/components/card/) with a price tag for three different coding courses being offered at CoderSchool.
   1. First, let's make the `<section>` as a container by adding the `.container` class to the element. Now, all the cards will be centered in the middle.
   2. Since we want to add more than 1 `card`, let's add a `.card-deck` container to make the list of cards itself responsive. Add the following code inside the `<section>` tag:
@@ -169,6 +171,7 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
 
   </div>
   ```
+  
   3. Then, add 3 empty cards inside the `.card-deck`. Also, give some `margin-bottom` and `box-shadow` to each card.
   ```html
   <div class="card mb-4 box-shadow">
@@ -210,6 +213,7 @@ Towards the end of the lab, we will go over [GitHub Pages](https://pages.github.
   </h3>
   ```
   Also, add `.d-flex` and `.flex-column` to `.card-body` to enable `flex` behavior vertically.
+  
   This is what you should get now 
   <img src="https://i.imgur.com/gtr6UIR.png" alt="result">
   Do the same thing for React and Data `.card-body`. You can look [here](http://www.buihdk.com/pricing-bootstrap-example/) for more content. 
@@ -265,9 +269,9 @@ Last but not least, the footer of the Pricing page. We want to include things li
   ```
   Save and reload the page. Then, do the same for the last two columns. Content can be found [here](http://www.buihdk.com/pricing-bootstrap-example/)
 
+
   ## (BONUS) Milestone 8: Create a Responsive Checkout form 
-  Make a responsive Checkout form similar to this http://www.buihdk.com/pricing-bootstrap-example/checkout.html 
-  and link it with one of the buttons on the card deck.
   
-  <br>
+  Make a responsive Checkout [form](https://getbootstrap.com/docs/4.0/components/forms/) similar to this http://www.buihdk.com/pricing-bootstrap-example/checkout.html and link it with one of the buttons on the card deck.
+  
   That should be it for your second lab! Did you realize that you made a lot of styling today without even touching the `style.css` at all? And any changes to the existing styles can be as easy as changing a class name (e.g. changing background color from red to blue by changing `.bg-danger` to `.bg-primary`). This is why Bootstrap is so powerful and is widely used in most of the websites nowsadays.
