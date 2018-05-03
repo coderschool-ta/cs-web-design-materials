@@ -9,7 +9,7 @@ UI (User Interface) is the interaction between the user and the interface of you
 
 UX (User Experience) is the experience that a user has when they interact with every aspect of a product. UX Design relates to the usability, accessibility, and satisfaction provided in the interaction with the product
 
-In our lecture today, we will work on a popular challenge called "The Wallet Project". It is a design thinking project from [Stanford d.school] (https://dschool-old.stanford.edu/groups/designresources/wiki/4dbb2/the_wallet_project.html) in which participants pair up, learn about each others’ wallets, brainstorm, and prototype **ONE** new *useful and meaningful* wallet for both. 
+In our lecture today, we will work on a popular challenge called "The Wallet Project". It is a design thinking project from [Stanford d.school](https://dschool-old.stanford.edu/groups/designresources/wiki/4dbb2/the_wallet_project.html) in which participants pair up, learn about each others’ wallets, brainstorm, and prototype **ONE** new *useful and meaningful* wallet for both. 
 
 <img src="https://i.imgur.com/gXEFO9T.jpg" alt="d_school_design">
 
