@@ -24,5 +24,5 @@ In our lecture today, we will work on a popular challenge called "The Wallet Pro
 - [Lecture Slides](https://www.beautiful.ai/deck/-LBVL0D5wkCgsXXp2tK5/Design-Thinking)
 
 # Other Resources
-[The Design Thinking Process](https://www.youtube.com/watch?v=_r0VX-aU_T8)
-[How It Works: Design Thinking and Angile](https://www.youtube.com/watch?v=pXtN4y3O35M)
+* [The Design Thinking Process](https://www.youtube.com/watch?v=_r0VX-aU_T8)
+* [How It Works: Design Thinking and Angile](https://www.youtube.com/watch?v=pXtN4y3O35M)
