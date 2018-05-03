@@ -12,7 +12,6 @@ UX (User Experience) is the experience that a user has when they interact with e
 
 In our lecture today, we will work on a popular challenge called "The Wallet Project". It is a design thinking project from [Stanford d.school](https://dschool-old.stanford.edu/groups/designresources/wiki/4dbb2/the_wallet_project.html) in which participants pair up, learn about each others’ wallets, brainstorm, and prototype **ONE** new *useful and meaningful* wallet for both. 
 
-<<<<<<< HEAD
 ## What is the Wallet Project?
 
 It is a group activity in which students rapidly do a "full design cycle process." The project is broken down into specific steps, and student have worksheet packets that guide them. In addition one or two facilitators (not participating in the project) prompt each step, and add some verbal color and instruction.
