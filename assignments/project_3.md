@@ -1,9 +1,9 @@
-# Week 3 Project: Build your favorite airline landing page using Weebly
+# Week 3 Project: UI/UX assignments
 
 **Due:** Monday, May 7th at 10pm
 
 ## Overview
-There are two assingments for this week: one is *required*, one is *optional*. 
+There are two assingments for this week: one (required) UX assignment, and one (optional) UI assignment. These assignments are relatively shorter than other weeks'. The goal of the assignments is to help you understand the different aspects of UI vs. UX design.
 
 ## Required Assignment
 Take a look at the following airline websites and compare them:
@@ -12,10 +12,10 @@ Take a look at the following airline websites and compare them:
 * [Jetstar](https://www.jetstar.com/vn/en/home)
 * [Singaporean Airlines](http://www.singaporeair.com/en_UK/vn/home)
 * [Emirates](https://www.emirates.com/vn/english/)
-For each of the websites, list out the goods, the bads, and suggestions to improve the user experience.
+For each of the websites, list out the goods, the bads, and any suggestions that you have to improve the user experience of the webiste.
 
 ## Optional Assignment
-Use [weebly](https://www.weebly.com/onboarding) to create a landing page for your favorite airlines and publish it.
+Use [weebly](https://www.weebly.com/onboarding) to create a landing page for your favorite airlines and [publish](https://hc.weebly.com/hc/en-us/articles/202015818-Publish-Your-Site) it.
 
 ## Submission
 Submitted through GitHub:
