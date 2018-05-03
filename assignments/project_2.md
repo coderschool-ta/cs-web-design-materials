@@ -35,6 +35,6 @@ The following advanced user stories are **optional**. You are not required to do
 * [ ] Add a [dropdown](https://getbootstrap.com/docs/4.1/components/dropdowns/) on top navigation
 
 ## Submission
-Submitted through GitHub, 
+Submitted through GitHub:
   * Be sure to **include a README** containing a GIF walkthrough of your app.
   * Use [this README template](https://github.com/buihdk/cs-fed-materials/blob/master/project_1_template.md) in order to have a complete README.
