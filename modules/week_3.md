@@ -1,4 +1,5 @@
 # Week 3 Resources -  Design Thinking with the Wallet Project
+
 Up to this point, you should have had a good grasp on how responsive websites are built from scratch, and a clear understanding of how the web works fundamentally. However, knowing all the tecnical requirements for building a site is not enough, you will also need to know how to create the **best experience** for your visitors.
 
 This week, we will take a deep dive into the UI/UX aspects of building a website. UI and UX are the two crucial elements that make up a great product, and they work closely together. 
@@ -11,6 +12,7 @@ UX (User Experience) is the experience that a user has when they interact with e
 
 In our lecture today, we will work on a popular challenge called "The Wallet Project". It is a design thinking project from [Stanford d.school](https://dschool-old.stanford.edu/groups/designresources/wiki/4dbb2/the_wallet_project.html) in which participants pair up, learn about each others’ wallets, brainstorm, and prototype **ONE** new *useful and meaningful* wallet for both. 
 
+<<<<<<< HEAD
 ## What is the Wallet Project?
 
 It is a group activity in which students rapidly do a "full design cycle process." The project is broken down into specific steps, and student have worksheet packets that guide them. In addition one or two facilitators (not participating in the project) prompt each step, and add some verbal color and instruction.
@@ -35,3 +37,4 @@ Participants get the feel of a design approach, gain some shared vocabulary, and
 # Other Resources
 * [The Design Thinking Process](https://www.youtube.com/watch?v=_r0VX-aU_T8)
 * [How It Works: Design Thinking and Angile](https://www.youtube.com/watch?v=pXtN4y3O35M)
+
