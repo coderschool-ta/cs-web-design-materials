@@ -1,7 +1,7 @@
 # Week 3 Resources -  Design Thinking with The Wallet Project
 Up to this point, you should have a good grasp on how responsive websites are built from scratch, and a clear understanding of how the web works fundamentally. However, knowing all the tecnical requirements for building a site is not enough, you will also need to know how to create the **best experience** for your visitors.
 
-This week, we will take a deep dive into the UI/UX aspects of building a website. UI and UX Design are the two crucial elements that make up a great product, and they work closely together. 
+This week, we will take a deep dive into the UI/UX aspects of building a website. UI and UX are the two crucial elements that make up a great product, and they work closely together. 
 
 <img src="https://i.imgur.com/OF5lcYU.jpg" alt="ui_vs_ux">
 
