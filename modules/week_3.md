@@ -23,12 +23,6 @@ Participants get the feel of a design approach, gain some shared vocabulary, and
 * [Facilitator worksheet](https://drive.google.com/file/d/1wOb0Bp3MT3WeUE0dZP4tdVeoqtOFNXoT/view)
 * [Student worksheet](https://drive.google.com/open?id=1lxNaKZnAUrh4R7zYOvfmZsJz8wwAAIXp)
 
-# Lab
-(to be updated)
-
-# Assignment
-(to be updated)
-
 # Resources 
 - Lecture Videos
 - [Lecture Slides](https://www.beautiful.ai/deck/-LBVL0D5wkCgsXXp2tK5/Design-Thinking)
