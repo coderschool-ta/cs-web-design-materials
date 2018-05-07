@@ -37,7 +37,7 @@ You will be taken to the Structure tab of your database. The database is empty b
 When WordPress is set up with this database, there will be additional 12 tables added by WordPress.
 You can also create an additonal custom table for your custom plugins but we won't go into that now. 
 
-### Set up WordPress in MAMP 
+### Set up WordPress in local server (MAMP)
 8. Remember the unzip `wordpress` package that we did in step 2? Change the folder name from `wordpress` to `my-first-wp-site` (same name as database name).
 9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the /MAMP/htdocs folder. `htdocs` folder is where all your wordpresses (websites) live.
 <img src="https://i.imgur.com/vWCyeQV.png" alt="htdocs">
@@ -61,9 +61,9 @@ Click 'Submit'
 15. Fill the information as below (use your email address):
 <img src="https://i.imgur.com/gzMIRKZ.png" alt="WP installation details">
 We use `root` for default username and password. You can change it later when you are more familar with WordPress.
-Click on `Install WordPress`.
+Click on `Install WordPress` when you are done.
 
-16. Success! WordPress has been installed. Now you can log in the newly set up WordPress website (locally) using the default username and password.
+16. Success! WordPress has been installed. Now you can log in to your local WordPress Dashboard using the default username and password.
 <img src="https://i.imgur.com/tFUL9fW.png" alt="WP Dashboard">
 
 
