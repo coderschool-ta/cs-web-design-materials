@@ -264,7 +264,7 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 
     Your remote database is now all set!
 
-### <a name="mile42></a> Milestone 4.2: Migrate WordPress files using a FTP software
+### <a name="mile42"></a> Milestone 4.2: Migrate WordPress files using a FTP software
 #### Fix the wp-config.php file
 1. Remember your WordPress folder `my-first-wp-site` that lives in `/MAMP/htdocs` folder? Make a copy of that outside MAMP and rename it to `my-first-wp-site-prod`. I don't want to use the same folder in MAMP because that one is configured for running locally only (dev version). To run on a remote server, it needs to be configured with the remote server details (prod version).
 2. Use your text editor to open the **wp-config.php** file in the `my-first-wp-site-prod` folder to make some changes. We need to change the values of DB_NAME, DB_USER, DB_PASSWORD, and DB_HOST.
