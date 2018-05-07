@@ -18,7 +18,7 @@ The WordPress.org website has [detailed instructions](https://codex.wordpress.or
 1. Head over to https://wordpress.org/download/ and dowload the lastest stable version of WordPress (v 4.9.5)
 2. Unzip the WordPress package in a desire position. The directory contains the unzip file is a WordPress software for your website. Your WordPress directory should have the following files:
 <img src="https://i.imgur.com/Ke3Kcbn.png" alt="WP files">
-Each website requires a seperate WordPress software. If I want to make 3 different websites then I will have to install 3 seperate WordPress software locally. 
+Each website requires a seperate WordPress software i.e. if you want to make 3 different websites then you will have to install 3 seperate WordPress software locally. 
 
 ### Install MAMP 
 Now, you will need a local server (environment) for the WordPress to run on. WordPress.org has a [list of recommended servers](https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/). I will use MAMP since it's easy and will help you understand the science "behind the scence". 
@@ -29,6 +29,7 @@ There is a new tool called [Flywheel](https://local.getflywheel.com/) that's gai
 5. When the Apache server and MySQL server are all set up (green light), click on 'Open WebStart page' to start the local server
 <img src="https://i.imgur.com/9pnBnX0.png" alt="MAMP">
 It will open a new tab on your web browser. The url is either http://localhost:8888/MAMP/?language=English (on Mac) or http://localhost/MAMP/?language=English (on Windows)
+
 6. This is a **Start** page, where you intereact with your local server. Click on **phpInfo** to be taken to the information page of PHP and Apache. Click on **Tools > phpMyAdmin** to be takend to the MySQL databases that contain all data of your websites.
 7. We will need a database for your new website (if there are 3 websites, there will be 3 different databases).
 Go to phpMyAdmin and click on `New` in the left panel. On the right panel, type "my-first-wp-site" in the database name. *Collation* is a set of rules that determine how data is sorted and compared. Pick "utf8_general_ci" as it is the most common collation. Then click `Create`.
