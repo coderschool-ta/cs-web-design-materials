@@ -2,7 +2,6 @@
 
 ## Overview:
 
-
 This is your final lab, and you will be learning all the *nuts and bolts* of a running website application in the internet. We will use WordPress software as the platform and the engine for our website. We will also register a free domain name and a free hosting server for your website. Besides HTML, CSS, and JavaScript on the client side, WordPress works with PHP and MySQL on the server side. We will also get to understand a bit of these technical terms. 
 
 A domain name is an easy-to-spell, easy-to-remember name for your website (eg. WordPress.org). Without a domain name, your website online address will just be an IP address (eg. 151.101.129.121), which is hard to remember. A hosting server is a machine that hosts your websites. It is where your websites live. When a person wants to visit a website from a browser, the browser (Safari, Chrome, Firefox, etc.) makes GET requests to the hosting server to retrieve the website information. A domain name and a host server work together i.e. they have to point to each other. 
