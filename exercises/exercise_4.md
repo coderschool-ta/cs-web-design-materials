@@ -119,8 +119,7 @@ The list that we saw above contains all the Posts and Pages in your website. How
 SELECT * FROM `wp_posts` WHERE `post_type` = "page"
 ```
 
-Bam! You have written your first SQL script, and the results return only the Pages. 
-If you want the results to return onlt Posts, change the `post_type` to "post".
+You have written your first SQL script, and the results return only the Pages. If you want the results to return onlt Posts, change the `post_type` to "post".
 
 ### Milestone 2.5: Manually install a new theme
 1. Go to https://colorlib.com/wp/themes/ for free themes.
@@ -148,8 +147,9 @@ Your WordPress website has only run locally in your computer so far. Now, we wil
 There are many websites that give out free domains and **freenom** is one of them.
 1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` and you should pick a different name (the same name is probably already taken by me).
 <img src="https://i.imgur.com/RuwGXkH.png" alt="freenom">
-2. 
-
+2. Do not use `.tk` domains. Many host servers have stopped working with `.tk` domains because these domains are abused by spammers and hackers. The other domains (`.ml`, `.ga`, `.cf`, and `.gq`) should be okay. Pick at least 2 domains in case one domain stops working. Here, I'll pick `.ml` and `.ga`, and checkout.
+3. Leave the Period to be `12 Months @ FREE`
+<img src="https://i.imgur.com/Lc2UH6R.png" alt="freenom-2">
 
 ### Milestone 4: Register a free host
 
