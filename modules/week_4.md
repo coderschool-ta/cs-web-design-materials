@@ -1,7 +1,7 @@
 # Week 4 Resources: Everything you need to know about WordPress  
 Up until now, we have covered a good amount on Web Design. We learned about HTML/CSS, Bootstrap, and UI/UX. This week, we will *fixate* our attention on WordPress. 
 
-WordPress itself is a different beast. The software is older than Facebook and Twitter. WordPress currently powers **30%** of all websites and dominates **76%** of CMS market. Moreover, WordPress is written in PHP which is the most popular server-side programming language (**83%** of all websites are written in PHP). WordPress is a free and open-source software, and there are more than 50,000 free plugins for downloads. Wordpress is available in 68+ languages, and is used by Goverments all over the world.
+WordPress itself is a different beast. The software is older than Facebook and Twitter. WordPress currently powers **30%** of all websites and dominates **76%** of CMS market. Moreover, WordPress is written in PHP which is the most popular server-side programming language (**83%** of all websites are written in PHP). WordPress is a free and open-source software, and there are more than **50,000** free plugins for downloads. Wordpress is available in **68+** languages, and is used by Goverments all over the world.
 
 To be able to cover everything of WordPress within one week would be an *understatement*. However, we will try to cover all the **fundamentals of WordPress** as much as possible. You will get to understand from the ground up how the WordPress software is installed and run locally to how it is hosted and run online in a web server. You will also understand the elements needed to have a hosted online website. 
 
