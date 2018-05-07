@@ -278,4 +278,5 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
     * Select all files in `my-first-wp-site-prod` folder by pressing `Ctrl-A` or `Cmd-A`
     * Move all files from `/my-first-wp-site-prod` in local to `/htdocs`in remote to start the uploading process (I have 1760 files total to upload)
     * When there is a 'Target file exists' notice, choose 'Overwrite if different size' and tick 'Apply to current queue only'
+    
     This process will take a long time so make sure you have a good internet connection when you are doing this.
