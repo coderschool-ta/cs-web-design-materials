@@ -1,4 +1,4 @@
-# Week 4 Resources -  
+# Week 4 Resources: Everything you need to know about WordPress  
 
 
 

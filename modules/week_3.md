@@ -1,4 +1,4 @@
-# Week 3 Resources -  Design Thinking with the Wallet Project
+# Week 3 Resources: Design Thinking with the Wallet Project
 
 Up to this point, you should have had a good grasp on how responsive websites are built from scratch, and a clear understanding of how the web works fundamentally. However, knowing all the tecnical requirements for building a site is not enough, you will also need to know how to create the **best experience** for your visitors.
 

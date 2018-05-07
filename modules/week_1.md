@@ -1,4 +1,4 @@
-# Week 1 Resources - The *essence* of the web!
+# Week 1 Resources: The *essence* of the web!
 Welcome to CoderSchool's Web Design Bootcamp Course. We're excited to embark you on a new journey 
 in learning web development altogether!
 

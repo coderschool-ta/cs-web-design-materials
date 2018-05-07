@@ -1,4 +1,4 @@
-# Week 2 Resources -  Responsive Design with Bootstrap
+# Week 2 Resources: Responsive Design with Bootstrap
 Last week we learned about HTML and CSS, the two core technologies that make up websites. HTML (HyperText Markup Language) provides the structure of the webpage, and CSS (Cascading Style Sheets) is the visual and layout of the webpage. 
 
 We learned what make up an HTML element: start tag, content, and end tag. We know the difference between normal elements vs. empty elements (self-closing element), or the difference between inline vs. block elements. 
