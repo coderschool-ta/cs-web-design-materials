@@ -51,11 +51,11 @@ Click on the `my-first-wp-site` hyperlink to start the WordPress set up.
 
 12. Going through the instructions and click on `Let's go!` button to be taken to the **database connection details** page.
 13. Make changes to your database connection details so it looks like below:
-    Database Name:      my-first-wp-site
-    Username:           root
-    Password:           root
-    Database Host:      localhost:8888 (or localhost for Windows)
-    Table Prefix:       wp_
+* Database Name:      my-first-wp-site
+* Username:           root
+* Password:           root
+* Database Host:      localhost:8888 (or localhost for Windows)
+* Table Prefix:       wp_
 Click 'Submit'
 14. Awesome! WordPress is all set up for the local server. Now, we can start the installation on the server. Click on `Run the installation` to be taken to the installation page.
 15. Fill the information as below (use your email address):
