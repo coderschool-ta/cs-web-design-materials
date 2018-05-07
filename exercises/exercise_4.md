@@ -28,7 +28,7 @@ There is a new tool called [Flywheel](https://local.getflywheel.com/) that's gai
 4. Open MAMP and click on 'Start Server'
 5. When the Apache server and MySQL server are all set up (green light), click on 'Open WebStart page' to start the local server
 <img src="https://i.imgur.com/9pnBnX0.png" alt="MAMP">
-It will open a new tab on your web browser. The url is either http://localhost:8888/MAMP/?language=English (on Mac) or http://localhost/MAMP/?language=English (on Windows)
+    It will open a new tab on your web browser. The url is either http://localhost:8888/MAMP/?language=English (on Mac) or http://localhost/MAMP/?language=English (on Windows)
 
 6. This is a **Start** page, where you intereact with your local server. Click on **phpInfo** to be taken to the information page of PHP and Apache. Click on **Tools > phpMyAdmin** to be takend to the MySQL databases that contain all data of your websites.
 7. We will need a database for your new website (if there are 3 websites, there will be 3 different databases).
