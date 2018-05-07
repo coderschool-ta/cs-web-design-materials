@@ -30,6 +30,7 @@ In today lab, we will get to learn these technology stacks in details. You will 
 4. [Migrate WordPress online](#mile4)
     * [Migrate database](#mile41)
     * [Migrate WordPress files](#mile42)
+    * [QA online site](#mile43)
 
 ## <a name="mile1"></a> Milestone 1: Set up your WordPress locally
 The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has information that you do really need to know. 
@@ -299,4 +300,13 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
     * Move all files from `/my-first-wp-site-prod` in local to `/htdocs`in remote to start the uploading process (I have 1760 files total to upload)
     * When there is a 'Target file exists' notice, choose 'Overwrite if different size' and tick 'Apply to current queue only'
 
-    This process will take a long time so make sure you have a good internet connection when you are doing this.
+    This process will take 1 to 2 hours so make sure you have a good internet connection when you are doing this.
+
+### <a name="mile43"></a> Milestone 4.3: Test your remote site
+1. When the transfer is done, first go to the wp-admin portal (e.g. `http://my-diy-wordpress-site.ml/wp-admin/`)
+2. Username and Password should still be `root`, then log in
+3. Go to Setting > General, make sure that all the urls are now pointing to your domain name rather than your local, then click `Save Changes`
+4. Go to Setting > Permalinks, make sure that all the urls here are also pointing to your domain name rather than your local, click `Save Changes`
+5. Now, go to your website (e.g. `http://my-diy-wordpress-site.ml/`) and it should be a functioning WordPress web application!
+
+    <img src="https://i.imgur.com/f7lj8MV.png" alt="my-diy-wp">
