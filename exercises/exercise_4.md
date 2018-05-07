@@ -11,11 +11,25 @@ PHP is the language that is used to send data back and forth between the browser
 
 A webhost server nowsadays always comes with the AMP (Apache, MySQL, PHP) stack which is a solution stack for running a website. WordPress needs to have the AMP stack to be able to start.
 
-In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. The goal of today lab is the following:
-* [Set up WordPress locally](#mile1)
-* [Personalize local WordPress](#mile2)
-* [Set up Remote Server](#mile3)
-* [Migrate WordPress online](#mile4)
+In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. We'll try to accomplish these goals in today lab:
+1. [Set up WordPress locally](#mile1)
+    * [Install WordPress](#mile11)
+    * [Install MAMP](#mile12)
+    * [Set up WordPress in MAMP](#mile13)
+2. [Personalize local WordPress](#mile2)
+    * [Publish Posts](#mile21)
+    * [Publish Pages](#mile22)
+    * [Create a Menu](#mile23)
+    * [Manage database](#mile24)
+    * [Install a theme](#mile24)
+    * [Install a plugin](#mile24)
+3. [Set up Remote Server](#mile3)
+    * [Register a domain](#mile31)
+    * [Register a hosting server](#mile32)
+    * [Assign domain to hosting server](#mile33)
+4. [Migrate WordPress online](#mile4)
+    * [Migrate database](#mile41)
+    * [Migrate WordPress files](#mile42)
 
 ## <a name="mile1"></a> Milestone 1: Set up your WordPress locally
 The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has information that you do really need to know. 
@@ -25,7 +39,7 @@ I will provide a quick and easy way to get WordPress running locally in your com
 2. Install MAMP
 3. Set up WordPress in local server (MAMP)
 
-### Milestone 1.1: Install WordPress
+### <a name="mile11"></a> Milestone 1.1: Install WordPress
 1. Head over to https://wordpress.org/download/ and dowload the lastest stable version of WordPress (v 4.9.5)
 2. Unzip the WordPress package in a desire position. The directory contains the unzip file is a WordPress software for your website. Your WordPress directory should have the following files:
 
@@ -33,7 +47,7 @@ I will provide a quick and easy way to get WordPress running locally in your com
 
     Each website requires a seperate WordPress software i.e. if you want to make 3 different websites then you will have to install 3 seperate WordPress software locally. 
 
-### Milestone 1.2: Install MAMP 
+### <a name="mile12"></a> Milestone 1.2: Install MAMP 
 Now, you will need a local server (environment) for the WordPress to run on. WordPress.org has a [list of recommended servers](https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/). I will use MAMP since it's easy and will help you understand the science "behind the scence". 
 There is a new tool called [Flywheel](https://local.getflywheel.com/) that's gaining a lot of traction lately. I actually like this tool more than MAMP because of its intuitive UI and user-friendly. However, I'll recommend you to use one other tool first before getting started on Flywheel.
 
@@ -53,7 +67,7 @@ You will be taken to the Structure tab of your database. The database is empty b
     When WordPress is set up with this database, there will be additional 12 tables added by WordPress. 
     You can also create an additonal custom table for your custom plugins but we won't go into that now. 
 
-### Milestone 1.3: Set up WordPress in MAMP
+### <a name="mile13"></a> Milestone 1.3: Set up WordPress in MAMP
 8. Remember the unzip `wordpress` package that we did in step 2? Change the folder name from `wordpress` to `my-first-wp-site` (same name as database name).
 9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the `/MAMP/htdocs` folder. `htdocs` folder is where all your wordpresses (websites) live.
 
@@ -89,21 +103,21 @@ You will be taken to the Structure tab of your database. The database is empty b
 
     <img src="https://i.imgur.com/tFUL9fW.png" alt="WP Dashboard">
 
-## Milestone 2: Personalize your local WordPress
+## <a name="mile2"></a> Milestone 2: Personalize your local WordPress
 Go to `../my-first-wp-site/wp-admin/`. This is a dashboard for you (the administrator) to manage your WordPress website.
 Now we will add some content to your site such as: Posts, Pages, and Main Menu.
 
-### Milestone 2.1: Publish 2 Posts
+### <a name="mile21"></a> Milestone 2.1: Publish 2 Posts
 * One post with an image, a youtube video, and some ipsum text (categorize and tag your post)
 * One post with a *featured image* and some ipsum text (categorize and tag your post)
 
 You can also just grab some random posts from the internet for your content (try this http://catsinternational.org/articles/). Right now, we only focus on the technical aspect of WordPress.
 
-### Milestone 2.2: Publish 2 Pages
+### <a name="mile22"></a> Milestone 2.2: Publish 2 Pages
 * **About Me** page: content about yourself
 * **Contact** page: how online people can reach you (e.g. Address: 12 Tôn Đản, Bến Nghé, Quận 4, Hồ Chí Minh 700000; Phone: 0122 474 2431; etc.)
 
-### Milestone 2.3: Create a Main Menu
+### <a name="mile23"></a> Milestone 2.3: Create a Main Menu
 1. Go to Appearance and give the Menu Name: `Main Menu`.
 2. Add Contact, About Me, and Sample Page inside the Menu Structure. The Sample Page is a *sub item* of the About Me page.
 3. Tick 'Top Menu' in the *Display location* and then click `Save Menu`.
@@ -112,7 +126,7 @@ Your WordPress Home page now should look similar to this:
 
 <img src="https://i.imgur.com/6tywpju.png" alt="WP Homepage">
 
-### Milestone 2.4: Manage your database
+### <a name="mile24"></a> Milestone 2.4: Manage your database
 All the content that you have created so far (pages and posts) are stored in the backend MySQL database. Now, let us take a look at these data
 1. Open the MAMP WebStart page again and go to **phpMyAdmin**
 2. Click on the `my-first-wp-site` database on the left panel. Notice that WordPress has created 12 tables with prefix "wp_" after the WordPress installation in `Milestone 1.3`
@@ -136,7 +150,7 @@ All the content that you have created so far (pages and posts) are stored in the
 
     You have written your first SQL script, and the results return only the Pages. If you want the results to return onlt Posts, change the `post_type` to "post".
 
-### Milestone 2.5: Manually install a new theme
+### <a name="mile25"></a> Milestone 2.5: Manually install a new theme
 1. Go to https://colorlib.com/wp/themes/ for free themes.
 2. Pick [activello](https://colorlib.com/wp/themes/activello/) and download the zip file (you can pick a different one later). 
     You can upload the Theme by going to `Dashboard > Apperance > Themes > Add New > Upload Theme` and just upload the theme zip file there. However, I want to add the theme manually.
@@ -145,7 +159,7 @@ All the content that you have created so far (pages and posts) are stored in the
     There are already 3 other theme folders inside the `themes` folder: **twentyfifteen**, **twentyseventeen**, and **twentysixteen**. Your default theme is **twentyseventeen**.
 5. Go back to your admin Dashboard and you should see the new **Activello** theme appears in the `Themes` page. Activate the theme to use it.
 
-### Milestone 2.6: Manually install a new plugin
+### <a name="mile26"></a> Milestone 2.6: Manually install a new plugin
 This is similar to how you installed a theme in `milestone 2.5`. You just need to download the zip file, unzip it and drop the plugin folder into `../MAMP/htdocs/my-first-wp-site/wp-content/plugins/` folder. Then, activate the plugin in the `Plugin` page.
 
 See how every post has a comment section that anyone can just make a comment on. Now, let's disable all the comments by using a plugin.
@@ -156,10 +170,10 @@ See how every post has a comment section that anyone can just make a comment on.
 
 <img src="https://i.imgur.com/Cfv8eXM.png" alt="post with no comment">
 
-## Milestone 3: Set up a Remote Server
+## <a name="mile3"></a> Milestone 3: Set up a Remote Server
 Your WordPress website has only run locally in your computer so far. Now, we will push the website into the web. To do that we will need a *domain* and a *hosting server*. Have I told you that you can do all of the hosting for free of charge? :)
 
-### Milestone 3.1: Register a free domain
+### <a name="mile31"></a> Milestone 3.1: Register a free domain
 There are many websites that give out free domains and **freenom** is one of them.
 1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` but you should pick a different name since the same name is probably already taken by me.
 
@@ -183,7 +197,7 @@ There are many websites that give out free domains and **freenom** is one of the
 
     I can see now that my two domains are active and ready to be used.
 
-### Milestone 3.2: Register a free remote hosting server
+### <a name="mile32"></a> Milestone 3.2: Register a free remote hosting server
 You have gotten yourself a domain name, the next step is to get a remote server to host your WordPress website. There are also a lot of websites that provide free hosting. In this lab, we will use **InfinityFree**
 1. Go to https://infinityfree.net/ and sign up for a new account (don't close the **freenom** tab yet, we'll go back to it later). If you use a [temp email](https://temp-mail.org/), you can re-use the same email that you signed up with **freenom**.
 
@@ -192,7 +206,7 @@ You have gotten yourself a domain name, the next step is to get a remote server 
 2. When the registration is all done and you are logged in. Click on `+ NEW ACCOUNT` to start a new server. You are allowed to have up to 3 servers per registered account.
 3. We don't want to use their subdomains so let's ignore the first option. We want to use our own domain. The domain that we have set up in `Milestone 3.1` need to point to these nameservers: **ns1.byet.org**, **ns2.byet.org**, **ns3.byet.org**, **ns4.byet.org**, **ns5.byet.org**. Otherwise, it won't work.
 
-### Milestone 3.3: Assign a domain name to your remote server
+### <a name="mile33"></a> Milestone 3.3: Assign a domain name to your remote server
 1. Go back to your domains in the **freenom** website
 2. Pick one domain and click on `Manage Domain`
 3. Click on the drop-down `Management Tools` and choose `Nameservers`
@@ -215,7 +229,7 @@ You have gotten yourself a domain name, the next step is to get a remote server 
 
     <img src="https://i.imgur.com/slExbL1.png" alt="infinityfree-4">
 
-## Milestone 4: Migrate your WordPress online
+## <a name="mile4"></a> Milestone 4: Migrate your WordPress online
 Now, we have an online remote server all set up, and a WordPress website running locally. The last thing we need to do is to migrate our local WordPress online.
 
 Inside your InfinityFree account, go to the Control Panel (cPanel) by click on the button `GO TO CONTROL PANEL`. The cPanel is a user interface for all the technicall stuff that let remote server owners manage their websites easier.
@@ -224,7 +238,7 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 * Upload MySQL database online using sql script
 * Upload all WP files online using a FTP tool
 
-### Milestone 4.1: Migrate database using a SQL script
+### <a name="mile41"></a> Milestone 4.1: Migrate database using a SQL script
 1. In your cPanel, click on 'MySQL Databases' to access to all your remote databases. There is current no database because you just set up the server.
 2. Enter a name for your new database and click on 'Create Database'. My remote database name is: `epiz_22047555_my_first_wp_site`. This is an empty database (you can check the database by using the online phpMyAdmin).
 3. Now, we need to export our local database and import to the online database. Access your local phpMyAdmin through MAMP, choose `my-first-wp-site` database and click on the `Export` tab.
@@ -250,7 +264,7 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 
     Your remote database is now all set!
 
-### Milestone 4.2: Migrate WordPress files using a FTP software
+### <a name="mile42></a> Milestone 4.2: Migrate WordPress files using a FTP software
 #### Fix the wp-config.php file
 1. Remember your WordPress folder `my-first-wp-site` that lives in `/MAMP/htdocs` folder? Make a copy of that outside MAMP and rename it to `my-first-wp-site-prod`. I don't want to use the same folder in MAMP because that one is configured for running locally only (dev version). To run on a remote server, it needs to be configured with the remote server details (prod version).
 2. Use your text editor to open the **wp-config.php** file in the `my-first-wp-site-prod` folder to make some changes. We need to change the values of DB_NAME, DB_USER, DB_PASSWORD, and DB_HOST.
