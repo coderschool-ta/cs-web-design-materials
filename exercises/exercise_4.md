@@ -1,6 +1,8 @@
 # Week 4 Lab: Set up website with WordPress software
 
 ## Overview:
+
+
 This is your final lab, and you will be learning all the *nuts and bolts* of a running website application in the internet. We will use WordPress software as the platform and the engine for our website. We will also register a free domain name and a free hosting server for your website. Besides HTML, CSS, and JavaScript on the client side, WordPress works with PHP and MySQL on the server side. We will also get to understand a bit of these technology terms. 
 
 A domain name is an easy-to-spell, easy-to-remember name for your website (eg. WordPress.org). Without a domain name, your website online address will just be an IP address (eg. 151.101.129.121), which is hard to remember. A webhost server is a machine that hosts your websites. It is where your websites live. When a person wants to visit a website from a browser, the browser (Safari, Chrome, Firefox, etc.) makes GET requests to the webhost server to retrieve the website information. A domain name and a webhost server works together i.e. they have to point to each other. 
@@ -9,9 +11,13 @@ PHP is the language that is used to send data back and forth between the browser
 
 A webhost server nowsadays always comes with the AMP (Apache, MySQL, PHP) stack which is a solution stack for running a website. WordPress needs to have the AMP stack to be able to start.
 
-In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. The goal of today lab is {INSERT HERE}
+In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. The goal of today lab is the following:
+* [Set up WordPress locally](#mile1)
+* [Personalize local WordPress](#mile2)
+* [Set up Remote Server](#mile3)
+* [Migrate WordPress online](#mile4)
 
-## Milestone 1: Set up your WordPress locally
+## <a name="mile1"></a> Milestone 1: Set up your WordPress locally
 The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has information that you do really need to know. 
 
 I will provide a quick and easy way to get WordPress running locally in your computer. Below are the steps:
