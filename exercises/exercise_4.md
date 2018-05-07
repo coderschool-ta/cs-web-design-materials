@@ -104,7 +104,7 @@ You can also just grab some random posts from the internet for your content (try
 
 Your WordPress Home page now should look similar to this:
 
-    <img src="https://i.imgur.com/6tywpju.png" alt="WP Homepage">
+<img src="https://i.imgur.com/6tywpju.png" alt="WP Homepage">
 
 ### Milestone 2.4: Manage your database
 All the content that you have created so far (pages and posts) are stored in the backend MySQL database. Now, let us take a look at these data
@@ -133,11 +133,9 @@ All the content that you have created so far (pages and posts) are stored in the
 ### Milestone 2.5: Manually install a new theme
 1. Go to https://colorlib.com/wp/themes/ for free themes.
 2. Pick [activello](https://colorlib.com/wp/themes/activello/) and download the zip file (you can pick a different one later). 
-
-You can upload the Theme by going to `Dashboard > Apperance > Themes > Add New > Upload Theme` and just upload the theme zip file there. However, I want to add the theme manually.
+    You can upload the Theme by going to `Dashboard > Apperance > Themes > Add New > Upload Theme` and just upload the theme zip file there. However, I want to add the theme manually.
 3. Unzip the zip file into a folder. The folder should be named `activello`.
 4. Drop the folder into `../MAMP/htdocs/my-first-wp-site/wp-content/themes/`.
-
     There are already 3 other theme folders inside the `themes` folder: **twentyfifteen**, **twentyseventeen**, and **twentysixteen**. Your default theme is **twentyseventeen**.
 5. Go back to your admin Dashboard and you should see the new **Activello** theme appears in the `Themes` page. Activate the theme to use it.
 
@@ -146,8 +144,9 @@ This is similar to how you installed a theme in `milestone 2.5`. You just need t
 
 See how every post has a comment section that anyone can just make a comment on. Now, let's disable all the comments by using a plugin.
 
-*Task:* Download `Disable Comments` plugin: https://wordpress.org/plugins/disable-comments/ to disable comments on all Posts
-*Result*: The comment section is no longer there at the bottom of any Post
+* **Task:** Download `Disable Comments` plugin: https://wordpress.org/plugins/disable-comments/ to disable comments on all Posts.
+
+* **Result:** The comment section is no longer there at the bottom of any Post
 
 <img src="https://i.imgur.com/Cfv8eXM.png" alt="post with no comment">
 
