@@ -12,7 +12,7 @@ PHP is the language that is used to send data back and forth between the browser
 A webhost server nowsadays always comes with the AMP (Apache, MySQL, PHP) stack which is a solution stack for running a website. WordPress needs to have the AMP stack to be able to start.
 
 In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. We'll try to accomplish these goals in today lab:
-1. [Set up WordPress locally](#mile1)
+1. [Set up local WordPress](#mile1)
     * [Install WordPress](#mile11)
     * [Install MAMP](#mile12)
     * [Set up WordPress in MAMP](#mile13)
