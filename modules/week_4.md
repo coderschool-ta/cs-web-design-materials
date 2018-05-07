@@ -5,13 +5,9 @@ WordPress itself is a different beast. The software is older than Facebook and T
 
 To be able to cover everything of WordPress within one week would be an *understatement*. However, we will try to cover all the **fundamentals of WordPress** as much as possible. You will get to understand from the ground up how the WordPress software is installed and run locally to how it is hosted and run online in a web server. You will also understand the elements needed to have a hosted online website. 
 
-The best to learn something is by doing it. We will be doing a lot of exercises this week that will help you understand all the **nuts and bolts** of a running website application in the internet. 
+The best to learn something is by doing it. This is your final week of class, and we will be doing a lot of exercises this week that will help you understand all the **nuts and bolts** of a running website application in the internet through WordPress. 
 
 In today exercise, we will use WordPress software as the platform (the engine) for our websites. We will register a free domain name, and a free hosting server for your website. Besides HTML, CSS, and JavaScript on the client side, WordPress works with PHP and MySQL on the server side. We will also get to understand more of these technical stacks through our exercises. 
-
-**Your lecture exercise will be setting up a local WordPress and migrate it online.**
-
-**Your lab exercise will be creating a custom theme and a custom plugin using HTML, CSS, and a bit of PHP.**
 
 # Definition for technical terms
 A **domain name** is an easy-to-spell, easy-to-remember name for your website (eg. WordPress.org). Without a domain name, your website online address will just be an IP address (eg. 151.101.129.121), which is hard to remember. 
