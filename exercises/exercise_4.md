@@ -250,12 +250,26 @@ Your remote database is now all set!
 ### Milestone 4.2: Migrate WordPress files using a FTP software
 #### Fix the wp-config.php file
 1. Remember your WordPress folder `my-first-wp-site` that lives in `/MAMP/htdocs` folder? Make a copy of that outside MAMP and rename it to `my-first-wp-site-prod`. I don't want to use the same folder in MAMP because that one is configured for running locally only (dev version). To run on a remote server, it needs to be configured with the remote server details (prod version).
-4. Use your text editor to open the **wp-config.php** file in the `my-first-wp-site-prod` folder to make some changes. We need to change the values of DB_NAME, DB_USER, DB_PASSWORD, and DB_HOST.
+2. Use your text editor to open the **wp-config.php** file in the `my-first-wp-site-prod` folder to make some changes. We need to change the values of DB_NAME, DB_USER, DB_PASSWORD, and DB_HOST.
     * DB_NAME: change `my-first-wp-site` to the remote MySQL Database Name (e.g. `epiz_22047555_my_first_wp_site`)
     * DB_USER: change `root` to the remote MySQL User Name (e.g. `epiz_22047555`)
     * DB_PASSWORD: change `root` to the remote MySQL Password (your cPanel Password)
     * DB_HOST: change `root` to the remote MySQL hostname (e.g. `sql211.epizy.com`)
 
-5. Save the **wp-config.php** file.
+3. Save the **wp-config.php** file.
+4. Now, we need to use a FTP tool to upload all the files inside the `my-first-wp-site-prod` folder to the remote server. We will use a popular free FTP software called [FileZilla](https://filezilla-project.org/)
 #### Use FileZilla to upload WordPress files
-6. Now, we need to use a FTP tool to upload all the files inside the `my-first-wp-site-prod` folder to the remote server.
+5. Download FileZilla here https://filezilla-project.org/download.php
+6. Open FileZilla and clicks on File > Site Manager
+7. Name the site `infinityfree` and fill in your remote server's *Host*, *User*, and *Password* information. *Host* and *User* are *FTP hostname* and *FTP username*; these info can be accessed easily in the cPanel right bottom panel. *Password* is your cPanel/server Password.
+
+<img src="https://i.imgur.com/4PCVm3G.png" alt="filezilla">
+
+8. Click `Connect` and provide your cPanel Password
+9. You know you are connected successfully to the remote server through FTP when you receive these messages:
+```ftp
+Status:      	TLS connection established.
+Status:      	Logged in
+Status:      	Retrieving directory listing...
+Status:      	Directory listing of "/" successful
+```
