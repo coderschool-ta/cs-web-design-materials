@@ -248,7 +248,7 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 Your remote database is now all set!
 
 ### Milestone 4.2: Migrate WordPress files using a FTP software
-### Milestone 4.2.1: Fix the wp-config.php file
+#### Fix the wp-config.php file
 1. Remember your WordPress folder `my-first-wp-site` that lives in `/MAMP/htdocs` folder? Make a copy of that outside MAMP and rename it to `my-first-wp-site-prod`. I don't want to use the same folder in MAMP because that one is configured for running locally only (dev version). To run on a remote server, it needs to be configured with the remote server details (prod version).
 4. Use your text editor to open the **wp-config.php** file in the `my-first-wp-site-prod` folder to make some changes. We need to change the values of DB_NAME, DB_USER, DB_PASSWORD, and DB_HOST.
     * DB_NAME: change `my-first-wp-site` to the remote MySQL Database Name (e.g. `epiz_22047555_my_first_wp_site`)
@@ -257,5 +257,5 @@ Your remote database is now all set!
     * DB_HOST: change `root` to the remote MySQL hostname (e.g. `sql211.epizy.com`)
 
 5. Save the **wp-config.php** file.
-### Milestone 4.2.2: Use FileZilla to upload WordPress files
+#### Use FileZilla to upload WordPress files
 6. Now, we need to use a FTP tool to upload all the files inside the `my-first-wp-site-prod` folder to the remote server.
