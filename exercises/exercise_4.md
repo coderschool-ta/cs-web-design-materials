@@ -91,9 +91,9 @@ Address: 12 Tôn Đản, Bến Nghé, Quận 4, Hồ Chí Minh 700000
 Phone: 0122 474 2431)
 
 ### Milestone 2.3: Create a Main Menu
-1. Go to Appearance and give the Menu Name `Main Menu`
+1. Go to Appearance and give the Menu Name `Main Menu`.
 2. Add Contact, About Me, and Sample Page inside the Menu Structure. The Sample Page is a sub item of the About Me.
-3. Tick 'Top Menu' in the *Display location* and then click `Save Menu`
+3. Tick 'Top Menu' in the *Display location* and then click `Save Menu`.
 
 Your WordPress Home page now should look similar to this:
 <img src="https://i.imgur.com/6tywpju.png" alt="WP Homepage">
@@ -110,24 +110,34 @@ SELECT * FROM `wp_posts`
 ```
 4. Now, let's do a bit of SQL while we are here. Sometimes, you need to check some data in the database to troubleshoot issues.
 The list that we saw above contains all the Posts and Pages in your website. However, you only want to view *only* the Pages. To do that, run this SQL script:
+```sql
+SELECT * FROM `wp_posts` WHERE `post_type` = "page"
+```
+Bam! You have written your first SQL script, and the results return only the Pages. 
+If you want the results to return onlt Posts, change the `post_type` to "post".
+
+### Milestone 2.5: Manually install a new theme
+1. Go to https://colorlib.com/wp/themes/ for free themes.
+2. Pick [activello](https://colorlib.com/wp/themes/activello/) and download the zip file (you can pick a different one later).
+You can upload the Theme by going to `Dashboard > Apperance > Themes > Add New > Upload Theme` and just upload the theme zip file there. However, I want to add the theme manually.
+3. Unzip the zip file into a folder. The folder should be named `activello`.
+4. Drop the folder into `../MAMP/htdocs/my-first-wp-site/wp-content/themes/`.
+There are already 3 other theme folders inside the `themes` folder: **twentyfifteen**, **twentyseventeen**, and **twentysixteen**. Your default theme is **twentyseventeen**.
+5. Go back to your admin Dashboard and you should see the new **Activello** theme appears in the `Themes` page. Activate the theme to use it.
+
+### Milestone 2.6: Manually install a new plugin
+This is similar to how you installed a theme in `milestone 2.5`. You just need to download the zip file, unzip it and drop the plugin folder into `../MAMP/htdocs/my-first-wp-site/wp-content/plugins/` folder. Then, activate the plugin in the `Plugin` page. 
+See how every post has a comment section that anyone can just make a comment on. Now, let's disable all the comments by using a plugin. 
+*Task:* Download `Disable Comments` plugin: https://wordpress.org/plugins/disable-comments/ to disable comments on all Posts
+
+### Milestone 3: Register a free domain
+There are many websites that give out free domains. In this exercise, we will use **freenom**.
+1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` and you should pick a different name (the same name is probably already taken by me).
+<img src="https://i.imgur.com/RuwGXkH.png" alt="freenom">
+2. 
 
 
-
-
-### Milestone 2.1: Add a new custom theme
-1. Go to https://colorlib.com/wp/themes/
-
-
-### Milestone 2: Register a free domain
-
-
-
-
-### Milestone 3: Register a free host
-
-
-
-
+### Milestone 4: Register a free host
 
 
 ### Milestone 2.1: Upload a WordPress theme
