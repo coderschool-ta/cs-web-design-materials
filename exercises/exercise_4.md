@@ -1,5 +1,5 @@
-# Week 4 Lab: Set up website with WordPress software
+# Week 4 Lab: Create custom WordPress components
 
 ## Overview:
-* Create a custom theme and upload to your WordPress (to be added)
-* Create a custom plugin and upload to your WordPress (to be added)
+* Create a custom theme using HTML, CSS and PHP (to be added)
+* Create a custom plugin using PHP (to be added)

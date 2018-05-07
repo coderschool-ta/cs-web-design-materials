@@ -1,4 +1,4 @@
-# Week 4 Resources: Everything you need to know about WordPress  
+# Week 4 Resources: WordPress Development 101
 Up until now, we have covered a good amount on Web Design. We learned about HTML/CSS, Bootstrap, and UI/UX. This week, we will *fixate* our attention on WordPress. 
 
 WordPress itself is a different beast. The software is older than Facebook and Twitter. WordPress currently powers **30%** of all websites and dominates **76%** of CMS market. Moreover, WordPress is written in PHP which is the most popular server-side programming language (**83%** of all websites are written in PHP). WordPress is a free and open-source software, and there are more than **50,000** free plugins for downloads. Wordpress is available in **68+** languages, and is used by Goverments all over the world.
@@ -20,8 +20,19 @@ A **hosting server** is a machine that hosts your websites. It is where your web
 
 A hosting server nowadays always comes with the **AMP** (Apache, MySQL, PHP) stack which is a solution stack for running a website. WordPress needs to have the AMP stack to be able to start.
 
-# Exercise
-In today exercise, you will be pair programming with a person sitting next to you. We'll try to accomplish these goals tonight:
+# Resources 
+- Lecture Videos
+- [Lecture Slides]()
+
+# Other Resources
+* [WordPress official documentation](https://codex.wordpress.org/Main_Page)
+* [Beginner's Guide for WordPress](http://www.wpbeginner.com/)
+* [Check websites that are built with WordPress](https://www.isitwp.com/)
+
+# Lecture Exercise
+In today exercise, you will be pair programming with a person sitting next to you. We will also have milestones to complete just like lab exercises.
+
+We'll try to accomplish these goals tonight:
 1. [Set up local WordPress](#mile1)
     * [Install WordPress](#mile11)
     * [Install MAMP](#mile12)
@@ -41,8 +52,6 @@ In today exercise, you will be pair programming with a person sitting next to yo
     * [Migrate database](#mile41)
     * [Migrate WordPress files](#mile42)
     * [QA online site](#mile43)
-
-We will also have milestones to complete just like lab exercises.
 
 ## <a name="mile1"></a> Milestone 1: Set up your WordPress locally
 The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has information that you do really need to know. 
@@ -324,12 +333,3 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 5. Now, go to your website (e.g. `http://my-diy-wordpress-site.ml/`) and it should be a functioning WordPress web application!
 
     <img src="https://i.imgur.com/f7lj8MV.png" alt="my-diy-wp">
-
-# Resources 
-- Lecture Videos
-- [Lecture Slides]()
-
-# Other Resources
-* [WordPress official documentation](https://codex.wordpress.org/Main_Page)
-* [Check websites that are built with WordPress](https://www.isitwp.com/)
-* [Beginner's Guide for WordPress](http://www.wpbeginner.com/)
