@@ -22,7 +22,9 @@ I will provide a quick and easy way to get WordPress running locally in your com
 ### Milestone 1.1: Install WordPress
 1. Head over to https://wordpress.org/download/ and dowload the lastest stable version of WordPress (v 4.9.5)
 2. Unzip the WordPress package in a desire position. The directory contains the unzip file is a WordPress software for your website. Your WordPress directory should have the following files:
+
 <img src="https://i.imgur.com/Ke3Kcbnl.png" alt="WP files">
+
 Each website requires a seperate WordPress software i.e. if you want to make 3 different websites then you will have to install 3 seperate WordPress software locally. 
 
 ### Milestone 1.2: Install MAMP 
@@ -32,20 +34,25 @@ There is a new tool called [Flywheel](https://local.getflywheel.com/) that's gai
 3. Go to https://www.mamp.info/en/ and download the MAMP free version. MAMP comes with PHP, Apache server, and MySQL server.
 4. Open MAMP and click on 'Start Server'
 5. When the Apache server and MySQL server are all set up (green light), click on 'Open WebStart page' to start the local server. It will open a new tab on your web browser. The url is either `http://localhost:8888/MAMP/?language=English` (on Mac) or `http://localhost/MAMP/?language=English` (on Windows)
+
 <img src="https://i.imgur.com/9pnBnX0.png" alt="MAMP">
 
 6. This is a **Start** page, where you intereact with your local server. Click on **phpInfo** to be taken to the information page of PHP and Apache. Click on **Tools > phpMyAdmin** to be takend to the MySQL databases that contain all data of your websites.
 7. We will need a database for your new website (if there are 3 websites, there will be 3 different databases).
 Go to phpMyAdmin and click on `New` in the left panel. On the right panel, type "my-first-wp-site" in the database name. *Collation* is a set of rules that determine how data is sorted and compared. Pick "utf8_general_ci" as it is the most common collation. Then click `Create`.
 You will be taken to the Structure tab of your database. The database is empty because there is no table. 
+
 <img src="https://i.imgur.com/iANKTtK.png" alt="phpMyAdmin">
+
 When WordPress is set up with this database, there will be additional 12 tables added by WordPress.
 You can also create an additonal custom table for your custom plugins but we won't go into that now. 
 
 ### Milestone 1.3: Set up WordPress in MAMP
 8. Remember the unzip `wordpress` package that we did in step 2? Change the folder name from `wordpress` to `my-first-wp-site` (same name as database name).
 9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the /MAMP/htdocs folder. `htdocs` folder is where all your wordpresses (websites) live.
+
 <img src="https://i.imgur.com/vWCyeQV.png" alt="htdocs">
+
 10. Now, go back to your MAMP `Start` page by click on the "Open WebStart page" on MAMP. Then, click on the `My Website` tab. You will be taken to `http://localhost:8888/` or `http://localhost/` depends on your Operation System
 11. You should see something like this:
 
@@ -72,6 +79,7 @@ We use `root` for default username and password. You can change it later when yo
 Click on `Install WordPress` when you are done.
 
 16. Success! WordPress has been installed. Now you can log in to your local WordPress Dashboard using the default username and password.
+
 <img src="https://i.imgur.com/tFUL9fW.png" alt="WP Dashboard">
 
 ## Milestone 2: Personalize your local WordPress
@@ -98,6 +106,7 @@ Phone: 0122 474 2431
 3. Tick 'Top Menu' in the *Display location* and then click `Save Menu`.
 
 Your WordPress Home page now should look similar to this:
+
 <img src="https://i.imgur.com/6tywpju.png" alt="WP Homepage">
 
 ### Milestone 2.4: Manage your database
@@ -105,7 +114,9 @@ All the content that you have created so far (pages and posts) are stored in the
 1. Open the MAMP WebStart page again and go to **phpMyAdmin**
 2. Click on the `my-first-wp-site` database on the left panel. Notice that WordPress has created 12 tables with prefix "wp_" after the WordPress installation in `Milestone 1.3`
 3. Locate the `wp_posts` table and click on `Browses`. Now, you can see all your posts' and pages' content are in the `post_content` column
+
 <img src="https://i.imgur.com/tMk9eKD.png" alt="wp_posts">
+
 Equivalently, you can also just run this sql script in the `SQL` tab to get the same result:
 
 ```sql
@@ -139,13 +150,15 @@ See how every post has a comment section that anyone can just make a comment on.
 
 *Task:* Download `Disable Comments` plugin: https://wordpress.org/plugins/disable-comments/ to disable comments on all Posts
 *Result*: The comment section is no longer there at the bottom of any Post
+
 <img src="https://i.imgur.com/Cfv8eXM.png" alt="post with no comment">
 
-### Milestone 3: Register a free domain
-Your WordPress website has only run locally in your computer so far. Now, we will push the website into the web. To do that we will need a *domain* and a *hosting server*. Have I told you that you can do all of the hosting for free of charge?
+## Milestone 3: Set up a Remote Server for your WordPress site
+Your WordPress website has only run locally in your computer so far. Now, we will push the website into the web. To do that we will need a *domain* and a *hosting server*. Have I told you that you can do all of the hosting for free of charge? :)
 
+### Milestone 3.1: Register a free domain
 There are many websites that give out free domains and **freenom** is one of them.
-1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` and you should pick a different name (the same name is probably already taken by me).
+1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` but you should pick a different name since the same name is probably already taken by me.
 
 <img src="https://i.imgur.com/RuwGXkH.png" alt="freenom">
 
@@ -167,7 +180,31 @@ There are many websites that give out free domains and **freenom** is one of the
 
 I can see now that my two domains are active and ready to be used.
 
-### Milestone 4: Register a free host
+### Milestone 3.2: Register a free remote hosting server
+You have gotten yourself a domain name, the next step is to get a remote server to host your WordPress website. There are also a lot of websites that provide free hosting. In this lab, we will use **InfinityFree**
+1. Go to https://infinityfree.net/ and sign up for a new account (don't close the **freenom** tab yet, we'll go back to it later). If you use a [temp email](https://temp-mail.org/), you can re-use the same email that you signed up with **freenom**.
+<img src="https://i.imgur.com/knWgjqW.png" alt="infinityfree-1">
+2. When the registration is all done and you are logged in. Click on `+ NEW ACCOUNT` to start a new server. You are allowed to have up to 3 servers per registered account.
+3. We don't want to use their subdomains so let's ignore the first option. We want to use our own domain. The domain that we have set up in `Milestone 3.1` need to point to these nameservers: **ns1.byet.org**, **ns2.byet.org**, **ns3.byet.org**, **ns4.byet.org**, **ns5.byet.org**. Otherwise, it won't work.
+
+### Milestone 3.3: Assign a domain name to your remote server
+1. Go back to your domains in the **freenom** website
+2. Pick one domain and click on `Manage Domain`
+3. Click on the drop-down `Management Tools` and choose `Nameservers`
+4. Choose custom nameservers and fill in like below:
+
+<img src="https://i.imgur.com/xQ2hdBq.png" alt="infinityfreVe-2">
+
+5. Click `Change Nameservers`. Now, the changes have been saved successfully!
+6. Go to your remote server in the **InfinityFree** website. Enter your domain name and click on `CHECK`.
+
+<img src="https://i.imgur.com/WWALLAX.png" alt="infinityfree-3">
+
+You should receive a congratulation notice saying that your domain is available. Otherwise, check the nameservers in from your domain again.
+7. Now, you will need to provide a Label and Password for your account. Make sure to keep these credentials somewhere safe because you will need them later. I'll change my account label to "My First DIY WordPress" and 
+
+
+### Milestone 5: Register a free host
 
 
 ### Milestone 2.1: Upload a WordPress theme
