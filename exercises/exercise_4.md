@@ -212,7 +212,7 @@ You should receive a congratulation notice saying that your domain is available.
 
 <img src="https://i.imgur.com/slExbL1.png" alt="infinityfree-4">
 
-### Milestone 4: Migrate your WordPress online
+## Milestone 4: Migrate your WordPress online
 Now, we have an online remote server all set up, and a WordPress website running locally. The last thing we need to do is to migrate our local WordPress online.
 
 1. Inside your InfinityFree account, go to the Control Panel (cPanel) by click on the button `GO TO CONTROL PANEL`. The cPanel is a user interface for all the technicall stuff that let remote server owners manage their websites easier.
@@ -228,9 +228,20 @@ Now, we have an online remote server all set up, and a WordPress website running
 <img src="https://i.imgur.com/eAasKSJ.png" alt="sql-export">
 
 6. Leave the defaul options: **Quick** export in **SQL** format and click `Go`. The tool provides you a sql script that generate all the tables and contents of the `my-first-wp-site` database. **Copy** the script.
-7. Open a new file in your text editor and **paste** the script here. Save the file as `my-first-wp-site.sql` in your local machine.
+7. Open a new file in your text editor and **paste** the script here. Save the file as `my-first-wp-site.sql` in your local machine. A copy of your database now sits in this script.
 
 <img src="https://i.imgur.com/B43bgwa.png" alt="sql-export-script">
+
+8. Go to your *remote* phpMyAdmin in cPanel to access your remote database.
+9. Click on the `Import` tab. In the **File to Import** section, upload your `my-first-wp-site.sql`
+10. Leave default settings for the others. Click on `Go` to start the database migration. It probably takes just a few seconds.
+11. Click on the `Structure` tab to make sure that all the tables have been imported correctly.
+12. You can run similar sql scripts as in `Milestone 2.4` or examine individual tables to make sure that the contents are correct.
+13. We need to do one last configuration with our remote database: *the site url needs to be changed*. Browse the `wp_options` table
+
+<img src="https://i.imgur.com/KSurmt1.png" alt="wp-options table">
+
+
 
 3. Remember your WordPress folder `my-first-wp-site` that sits in `/MAMP/htdocs` folder? Make a copy of that outside MAMP and rename it to `my-first-wp-site-prod`. I don't want to use the same folder in MAMP because that one is the dev version for running locally. To run on a remote server, it needs to be configured with the remote server details.
 4. Use your text editor to open the `wp-config.php` file in the `my-first-wp-site-prod` folder to make some changes.
