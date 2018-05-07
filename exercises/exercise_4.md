@@ -22,7 +22,7 @@ I will provide a quick and easy way to get WordPress running locally in your com
 ### Milestone 1.1: Install WordPress
 1. Head over to https://wordpress.org/download/ and dowload the lastest stable version of WordPress (v 4.9.5)
 2. Unzip the WordPress package in a desire position. The directory contains the unzip file is a WordPress software for your website. Your WordPress directory should have the following files:
-<img src="https://i.imgur.com/Ke3Kcbn.png" alt="WP files">
+<img src="https://i.imgur.com/Ke3Kcbnl.png" alt="WP files">
 Each website requires a seperate WordPress software i.e. if you want to make 3 different websites then you will have to install 3 seperate WordPress software locally. 
 
 ### Milestone 1.2: Install MAMP 
@@ -104,7 +104,12 @@ All the content that you have created so far (pages and posts) are stored in the
 2. Click on the `my-first-wp-site` database on the left panel. Notice that WordPress has created 12 tables with prefix "wp_" after the WordPress installation in `Milestone 1.3`
 3. Locate the `wp_posts` table and click on `Browses`. Now, you can see all your posts' and pages' content are in the `post_content` column
 <img src="https://i.imgur.com/tMk9eKD.png" alt="wp_posts">
-
+Equivalently, you can also just run this sql script in the `SQL` tab to get the same result:
+```sql
+SELECT * FROM `wp_posts`
+```
+4. Now, let's do a bit of SQL while we are here. Sometimes, you need to check some data in the database to troubleshoot issues.
+The list that we saw above contains all the Posts and Pages in your website. However, you only want to view *only* the Pages. To do that, run this SQL script:
 
 
 
