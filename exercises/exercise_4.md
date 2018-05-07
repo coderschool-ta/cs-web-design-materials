@@ -228,7 +228,7 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 4. Leave the defaul options: **Quick** export in **SQL** format and click `Go`. The tool provides you a sql script that generate all the tables and contents of the `my-first-wp-site` database. **Copy** the script.
 5. Open a new file in your text editor and **paste** the script here. Save the file as `my-first-wp-site.sql` in your local machine. A copy of your database now sits in this script.
 
-<img src="https://i.imgur.com/B43bgwa.png" alt="sql-export-script">
+    <img src="https://i.imgur.com/B43bgwa.png" alt="sql-export-script">
 
 6. Go to your *remote* phpMyAdmin in cPanel to access your remote database.
 7. Click on the `Import` tab. In the **File to Import** section, upload your `my-first-wp-site.sql`
@@ -278,5 +278,5 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
     * Select all files in `my-first-wp-site-prod` folder by pressing `Ctrl-A` or `Cmd-A`
     * Move all files from `/my-first-wp-site-prod` in local to `/htdocs`in remote to start the uploading process (I have 1760 files total to upload)
     * When there is a 'Target file exists' notice, choose 'Overwrite if different size' and tick 'Apply to current queue only'
-    
+
     This process will take a long time so make sure you have a good internet connection when you are doing this.
