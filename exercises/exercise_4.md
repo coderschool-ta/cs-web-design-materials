@@ -65,34 +65,36 @@ Click on the `my-first-wp-site` hyperlink to start the WordPress set up.
 Click 'Submit'
 14. Awesome! WordPress is all set up for the local server. Now, we can start the installation on the server. Click on `Run the installation` to be taken to the installation page.
 15. Fill the information as below (use your email address):
+
 <img src="https://i.imgur.com/gzMIRKZ.png" alt="WP installation details">
+
 We use `root` for default username and password. You can change it later when you are more familar with WordPress.
 Click on `Install WordPress` when you are done.
 
 16. Success! WordPress has been installed. Now you can log in to your local WordPress Dashboard using the default username and password.
 <img src="https://i.imgur.com/tFUL9fW.png" alt="WP Dashboard">
 
-
 ## Milestone 2: Personalize your local WordPress
 Go to `../my-first-wp-site/wp-admin/`. This is a dashboard for you (the administrator) to manage your WordPress website.
-Now we will add some content to your site.
+Now we will add some content to your site such as: Posts, Pages, and Main Menu.
 
 ### Milestone 2.1: Publish 2 Posts
 * One post with an image, a youtube video, and some ipsum text (categorize and tag your post)
 * One post with a *featured image* and some ipsum text (categorize and tag your post)
-You can also just grab some random posts from the internet for your content (try this http://catsinternational.org/articles/).
-Right now, we only focus on the engineering side of WordPress.
+
+You can also just grab some random posts from the internet for your content (try this http://catsinternational.org/articles/). Right now, we only focus on the technical aspect of WordPress.
 
 ### Milestone 2.2: Publish 2 Pages
-* *About Me* page: content about yourself
-* *Contact* page: how online people can reach you
-(CoderSchool contact example:
+* **About Me** page: content about yourself
+* **Contact** page: how online people can reach you
+
+Example:
 Address: 12 Tôn Đản, Bến Nghé, Quận 4, Hồ Chí Minh 700000
-Phone: 0122 474 2431)
+Phone: 0122 474 2431
 
 ### Milestone 2.3: Create a Main Menu
-1. Go to Appearance and give the Menu Name `Main Menu`.
-2. Add Contact, About Me, and Sample Page inside the Menu Structure. The Sample Page is a sub item of the About Me.
+1. Go to Appearance and give the Menu Name: `Main Menu`.
+2. Add Contact, About Me, and Sample Page inside the Menu Structure. The Sample Page is a *sub item* of the About Me page.
 3. Tick 'Top Menu' in the *Display location* and then click `Save Menu`.
 
 Your WordPress Home page now should look similar to this:
@@ -105,33 +107,45 @@ All the content that you have created so far (pages and posts) are stored in the
 3. Locate the `wp_posts` table and click on `Browses`. Now, you can see all your posts' and pages' content are in the `post_content` column
 <img src="https://i.imgur.com/tMk9eKD.png" alt="wp_posts">
 Equivalently, you can also just run this sql script in the `SQL` tab to get the same result:
+
 ```sql
 SELECT * FROM `wp_posts`
 ```
+
 4. Now, let's do a bit of SQL while we are here. Sometimes, you need to check some data in the database to troubleshoot issues.
 The list that we saw above contains all the Posts and Pages in your website. However, you only want to view *only* the Pages. To do that, run this SQL script:
+
 ```sql
 SELECT * FROM `wp_posts` WHERE `post_type` = "page"
 ```
+
 Bam! You have written your first SQL script, and the results return only the Pages. 
 If you want the results to return onlt Posts, change the `post_type` to "post".
 
 ### Milestone 2.5: Manually install a new theme
 1. Go to https://colorlib.com/wp/themes/ for free themes.
-2. Pick [activello](https://colorlib.com/wp/themes/activello/) and download the zip file (you can pick a different one later).
+2. Pick [activello](https://colorlib.com/wp/themes/activello/) and download the zip file (you can pick a different one later). 
+
 You can upload the Theme by going to `Dashboard > Apperance > Themes > Add New > Upload Theme` and just upload the theme zip file there. However, I want to add the theme manually.
 3. Unzip the zip file into a folder. The folder should be named `activello`.
 4. Drop the folder into `../MAMP/htdocs/my-first-wp-site/wp-content/themes/`.
+
 There are already 3 other theme folders inside the `themes` folder: **twentyfifteen**, **twentyseventeen**, and **twentysixteen**. Your default theme is **twentyseventeen**.
 5. Go back to your admin Dashboard and you should see the new **Activello** theme appears in the `Themes` page. Activate the theme to use it.
 
 ### Milestone 2.6: Manually install a new plugin
-This is similar to how you installed a theme in `milestone 2.5`. You just need to download the zip file, unzip it and drop the plugin folder into `../MAMP/htdocs/my-first-wp-site/wp-content/plugins/` folder. Then, activate the plugin in the `Plugin` page. 
-See how every post has a comment section that anyone can just make a comment on. Now, let's disable all the comments by using a plugin. 
+This is similar to how you installed a theme in `milestone 2.5`. You just need to download the zip file, unzip it and drop the plugin folder into `../MAMP/htdocs/my-first-wp-site/wp-content/plugins/` folder. Then, activate the plugin in the `Plugin` page.
+
+See how every post has a comment section that anyone can just make a comment on. Now, let's disable all the comments by using a plugin.
+
 *Task:* Download `Disable Comments` plugin: https://wordpress.org/plugins/disable-comments/ to disable comments on all Posts
+*Result*: The comment section is no longer there at the bottom of any Post
+<img src="https://i.imgur.com/Cfv8eXM.png" alt="post with no comment">
 
 ### Milestone 3: Register a free domain
-There are many websites that give out free domains. In this exercise, we will use **freenom**.
+Your WordPress website has only run locally in your computer so far. Now, we will push the website into the web. To do that we will need a *domain* and a *hosting server*. Have I told you that you can do all of the hosting for free of charge?
+
+There are many websites that give out free domains and **freenom** is one of them.
 1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` and you should pick a different name (the same name is probably already taken by me).
 <img src="https://i.imgur.com/RuwGXkH.png" alt="freenom">
 2. 
