@@ -147,9 +147,16 @@ Your WordPress website has only run locally in your computer so far. Now, we wil
 There are many websites that give out free domains and **freenom** is one of them.
 1. Go to http://www.freenom.com/ and type in your desired domain name in the Check Availability box. I use `my-diy-wordpress-site` and you should pick a different name (the same name is probably already taken by me).
 <img src="https://i.imgur.com/RuwGXkH.png" alt="freenom">
-2. Do not use `.tk` domains. Many host servers have stopped working with `.tk` domains because these domains are abused by spammers and hackers. The other domains (`.ml`, `.ga`, `.cf`, and `.gq`) should be okay. Pick at least 2 domains in case one domain stops working. Here, I'll pick `.ml` and `.ga`, and checkout.
-3. Leave the Period to be `12 Months @ FREE`
+2. Do not use `.tk` domains. Many host servers have stopped working with `.tk` domains because these domains are abused by spammers and hackers. The other domains (`.ml`, `.ga`, `.cf`, and `.gq`) should be okay. Pick at least 2 domains in case one domain stops working. Here, I'll pick `.ml` and `.ga`, and click `Checkout`.
+3. Change the Period to `12 Months @ FREE`, and click on `Continue`
 <img src="https://i.imgur.com/Lc2UH6R.png" alt="freenom-2">
+4. Enter your email address at the 'Review & Checkout' page. You can also use a [temp email](https://temp-mail.org/) instead. Then verify your email address.
+5. After the email verification, you are required to fill in the 'Your Details' information. Fill in all the blank fields, tick the 'Terms & Conditions' checkbox and click on `Complete Order`.
+<img src="https://i.imgur.com/Z8NMGsn.png" alt="freenom-3">
+6. Now, you are all set. Click on the button `Click here to go to your Client Area`.
+7. Sign in with your email and password, and go to **Services > My Domains**
+<img src="https://i.imgur.com/rRGiM8v.png" alt="freenom-4">
+I can see now that my two domains are active and ready to be used.
 
 ### Milestone 4: Register a free host
 
