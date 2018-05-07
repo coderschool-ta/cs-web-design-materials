@@ -183,7 +183,9 @@ I can see now that my two domains are active and ready to be used.
 ### Milestone 3.2: Register a free remote hosting server
 You have gotten yourself a domain name, the next step is to get a remote server to host your WordPress website. There are also a lot of websites that provide free hosting. In this lab, we will use **InfinityFree**
 1. Go to https://infinityfree.net/ and sign up for a new account (don't close the **freenom** tab yet, we'll go back to it later). If you use a [temp email](https://temp-mail.org/), you can re-use the same email that you signed up with **freenom**.
+
 <img src="https://i.imgur.com/knWgjqW.png" alt="infinityfree-1">
+
 2. When the registration is all done and you are logged in. Click on `+ NEW ACCOUNT` to start a new server. You are allowed to have up to 3 servers per registered account.
 3. We don't want to use their subdomains so let's ignore the first option. We want to use our own domain. The domain that we have set up in `Milestone 3.1` need to point to these nameservers: **ns1.byet.org**, **ns2.byet.org**, **ns3.byet.org**, **ns4.byet.org**, **ns5.byet.org**. Otherwise, it won't work.
 
@@ -201,8 +203,13 @@ You have gotten yourself a domain name, the next step is to get a remote server 
 <img src="https://i.imgur.com/WWALLAX.png" alt="infinityfree-3">
 
 You should receive a congratulation notice saying that your domain is available. Otherwise, check the nameservers in from your domain again.
-7. Now, you will need to provide a Label and Password for your account. Make sure to keep these credentials somewhere safe because you will need them later. I'll change my account label to "My First DIY WordPress" and 
 
+7. Now, you will need to provide a Label and Password for your account. Make sure to keep these credentials somewhere safe because you will need them later. I'll change my account Label to "My First DIY WordPress" and keep the Password the same.
+8. Click on `CREATE ACCOUNT`.
+9. The server is being set up. The `epiz_********` is your Username. Click on `VIEW IN CLIENT AREA`.
+10. Wait for a few minutes and then go to your website (mine is `http://my-diy-wordpress-site.ml/`),
+11. If you see the below for your website, congrats! Your remote server is now live!
+<img src="https://i.imgur.com/slExbL1.png" alt="infinityfree-4">
 
 ### Milestone 5: Register a free host
 
