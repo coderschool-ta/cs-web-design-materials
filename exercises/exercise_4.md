@@ -69,7 +69,8 @@ You will be taken to the Structure tab of your database. The database is empty b
     * Database Host:      localhost:8888 (or localhost for Windows)
     * Table Prefix:       wp_
 
-Click 'Submit'
+    Click 'Submit'
+
 14. Awesome! WordPress is all set up for the local server. Now, we can start the installation on the server. Click on `Run the installation` to be taken to the installation page.
 15. Fill the information as below (use your email address):
 
