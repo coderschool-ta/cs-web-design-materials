@@ -12,15 +12,20 @@ A webhost server nowsadays always comes with the AMP (Apache, MySQL, PHP) stack 
 In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. The goal of today lab is {INSERT HERE}
 
 ## Milestone 1: Install and run WordPress locally
-The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has too much information which you do not need to know all. I will provide a quick and easy way to get it running locally in your computer.
+The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has information that you do really need to know. 
 
-### Install WordPress
+I will provide a quick and easy way to get WordPress running locally in your computer. Below are the steps:
+1. Install WordPress
+2. Install MAMP
+3. Set up WordPress in local server (MAMP)
+
+### Milestone 1.1: Install WordPress
 1. Head over to https://wordpress.org/download/ and dowload the lastest stable version of WordPress (v 4.9.5)
 2. Unzip the WordPress package in a desire position. The directory contains the unzip file is a WordPress software for your website. Your WordPress directory should have the following files:
 <img src="https://i.imgur.com/Ke3Kcbn.png" alt="WP files">
 Each website requires a seperate WordPress software i.e. if you want to make 3 different websites then you will have to install 3 seperate WordPress software locally. 
 
-### Install MAMP 
+### Milestone 1.2: Install MAMP 
 Now, you will need a local server (environment) for the WordPress to run on. WordPress.org has a [list of recommended servers](https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/). I will use MAMP since it's easy and will help you understand the science "behind the scence". 
 There is a new tool called [Flywheel](https://local.getflywheel.com/) that's gaining a lot of traction lately. I actually like this tool more than MAMP because of its intuitive UI and user-friendly. However, I'll recommend you to use one other tool first before getting started on Flywheel.
 
@@ -37,7 +42,7 @@ You will be taken to the Structure tab of your database. The database is empty b
 When WordPress is set up with this database, there will be additional 12 tables added by WordPress.
 You can also create an additonal custom table for your custom plugins but we won't go into that now. 
 
-### Set up WordPress in local server (MAMP)
+### Milestone 1.3: Set up WordPress in MAMP
 8. Remember the unzip `wordpress` package that we did in step 2? Change the folder name from `wordpress` to `my-first-wp-site` (same name as database name).
 9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the /MAMP/htdocs folder. `htdocs` folder is where all your wordpresses (websites) live.
 <img src="https://i.imgur.com/vWCyeQV.png" alt="htdocs">
@@ -56,6 +61,7 @@ Click on the `my-first-wp-site` hyperlink to start the WordPress set up.
 * Password:           root
 * Database Host:      localhost:8888 (or localhost for Windows)
 * Table Prefix:       wp_
+
 Click 'Submit'
 14. Awesome! WordPress is all set up for the local server. Now, we can start the installation on the server. Click on `Run the installation` to be taken to the installation page.
 15. Fill the information as below (use your email address):
@@ -67,9 +73,60 @@ Click on `Install WordPress` when you are done.
 <img src="https://i.imgur.com/tFUL9fW.png" alt="WP Dashboard">
 
 
+## Milestone 2: Personalize your local WordPress
+Go to `../my-first-wp-site/wp-admin/`. This is a dashboard for you (the administrator) to manage your WordPress website.
+Now we will add some content to your site.
+
+### Milestone 2.1: Publish 2 Posts
+* One post with an image, a youtube video, and some ipsum text (categorize and tag your post)
+* One post with a *featured image* and some ipsum text (categorize and tag your post)
+You can also just grab some random posts from the internet for your content (try this http://catsinternational.org/articles/).
+Right now, we only focus on the engineering side of WordPress.
+
+### Milestone 2.2: Publish 2 Pages
+* *About Me* page: content about yourself
+* *Contact* page: how online people can reach you
+(CoderSchool contact example:
+Address: 12 Tôn Đản, Bến Nghé, Quận 4, Hồ Chí Minh 700000
+Phone: 0122 474 2431)
+
+### Milestone 2.3: Create a Main Menu
+1. Go to Appearance and give the Menu Name `Main Menu`
+2. Add Contact, About Me, and Sample Page inside the Menu Structure. The Sample Page is a sub item of the About Me.
+3. Tick 'Top Menu' in the *Display location* and then click `Save Menu`
+
+Your WordPress Home page now should look similar to this:
+<img src="https://i.imgur.com/6tywpju.png" alt="WP Homepage">
+
+### Milestone 2.4: Manage your database
+All the content that you have created so far (pages and posts) are stored in the backend MySQL database. Now, let us take a look at these data
+1. Open the MAMP WebStart page again and go to **phpMyAdmin**
+2. Click on the `my-first-wp-site` database on the left panel. Notice that WordPress has created 12 tables with prefix "wp_" after the WordPress installation in `Milestone 1.3`
+3. Locate the `wp_posts` table and click on `Browses`. Now, you can see all your posts' and pages' content are in the `post_content` column
+<img src="https://i.imgur.com/tMk9eKD.png" alt="wp_posts">
 
 
 
-## (BONUS) Milestone 4: PICTURE
-* You can edit your products’ picture using this: https://www.picmonkey.com/photo-editor/photo-filters 
-* Need some quality pictures related to the theme of your landing page? Go here: https://unsplash.com
+
+
+### Milestone 2.1: Add a new custom theme
+1. Go to https://colorlib.com/wp/themes/
+
+
+### Milestone 2: Register a free domain
+
+
+
+
+### Milestone 3: Register a free host
+
+
+
+
+
+
+### Milestone 2.1: Upload a WordPress theme
+    
+1. Create 3 Posts: 1 post with a featured image and ipsum text, 1 post with 
+
+
