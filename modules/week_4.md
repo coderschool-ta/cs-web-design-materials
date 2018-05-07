@@ -1,11 +1,11 @@
 # Week 4 Resources: Everything you need to know about WordPress  
 Up until now, we have covered a good amount on Web Design. We learned about HTML/CSS, Bootstrap, and UI/UX. This week, we will *fixate* our attention on WordPress. 
 
-WordPress itself is a different beast. The software is older than Facebook and Twitter. WordPress currently powers 30% of all websites and dominates 76% of CMS market. Moreover, WordPress is written in PHP which is the most popular server-side programming language (83% of all websites are written in PHP). WordPress is a free and open-source software, and there are more than 50,000 free plugins for downloads. Wordpress is available in 68+ languages, and is used by Goverments all over the world.
+WordPress itself is a different beast. The software is older than Facebook and Twitter. WordPress currently powers **30%** of all websites and dominates **76%** of CMS market. Moreover, WordPress is written in PHP which is the most popular server-side programming language (**83%** of all websites are written in PHP). WordPress is a free and open-source software, and there are more than 50,000 free plugins for downloads. Wordpress is available in 68+ languages, and is used by Goverments all over the world.
 
-To be able to cover everything of WordPress within one week would be an understatement. However, we will try to cover all the *fundamentals* of WordPress as much as possible. You will get to understand from the ground up how the WordPress software is installed and run locally to how it is hosted and run online in a web server. You will also understand the elements needed to have a hosted online website. 
+To be able to cover everything of WordPress within one week would be an *understatement*. However, we will try to cover all the **fundamentals of WordPress** as much as possible. You will get to understand from the ground up how the WordPress software is installed and run locally to how it is hosted and run online in a web server. You will also understand the elements needed to have a hosted online website. 
 
-The best to learn something is by doing it. We will be doing a lot of exercises this week that will help you understand all the *nuts and bolts* of a running website application in the internet. 
+The best to learn something is by doing it. We will be doing a lot of exercises this week that will help you understand all the **nuts and bolts** of a running website application in the internet. 
 
 In today exercise, we will use WordPress software as the platform (the engine) for our websites. We will register a free domain name, and a free hosting server for your website. Besides HTML, CSS, and JavaScript on the client side, WordPress works with PHP and MySQL on the server side. We will also get to understand more of these technical stacks through our exercises. 
 
@@ -329,16 +329,11 @@ Now, to push our local stuff online correctly, we will have to do 2 main things:
 
     <img src="https://i.imgur.com/f7lj8MV.png" alt="my-diy-wp">
 
-
-
-
-
-
 # Resources 
 - Lecture Videos
 - [Lecture Slides]()
 
 # Other Resources
-* Find out which websites are [built with WordPress](https://www.isitwp.com/)?
-* 
-
+* [WordPress official documentation](https://codex.wordpress.org/Main_Page)
+* [Check websites that are built with WordPress](https://www.isitwp.com/)
+* [Beginner's Guide for WordPress](http://www.wpbeginner.com/)
