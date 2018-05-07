@@ -28,6 +28,7 @@ There is a new tool called [Flywheel](https://local.getflywheel.com/) that's gai
 4. Open MAMP and click on 'Start Server'
 5. When the Apache server and MySQL server are all set up (green light), click on 'Open WebStart page' to start the local server. It will open a new tab on your web browser. The url is either `http://localhost:8888/MAMP/?language=English` (on Mac) or `http://localhost/MAMP/?language=English` (on Windows)
 <img src="https://i.imgur.com/9pnBnX0.png" alt="MAMP">
+
 6. This is a **Start** page, where you intereact with your local server. Click on **phpInfo** to be taken to the information page of PHP and Apache. Click on **Tools > phpMyAdmin** to be takend to the MySQL databases that contain all data of your websites.
 7. We will need a database for your new website (if there are 3 websites, there will be 3 different databases).
 Go to phpMyAdmin and click on `New` in the left panel. On the right panel, type "my-first-wp-site" in the database name. *Collation* is a set of rules that determine how data is sorted and compared. Pick "utf8_general_ci" as it is the most common collation. Then click `Create`.
@@ -37,16 +38,17 @@ When WordPress is set up with this database, there will be additional 12 tables 
 You can also create an additonal custom table for your custom plugins but we won't go into that now. 
 
 ### Set up WordPress in MAMP 
-8. Remember the unzip *wordpress* package that we did in step 2? Change the folder name from *wordpress* to *my-first-wp-site* (same name as database name).
-9. Manually move (copy-paste or drag-drop) the *my-first-wp-site* folder to inside the /MAMP/htdocs folder. `htdocs` folder is where all your wordpresses (websites) live.
+8. Remember the unzip `wordpress` package that we did in step 2? Change the folder name from `wordpress` to `my-first-wp-site` (same name as database name).
+9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the /MAMP/htdocs folder. `htdocs` folder is where all your wordpresses (websites) live.
 <img src="https://i.imgur.com/vWCyeQV.png" alt="htdocs">
-10. Now, go back to your MAMP `Start` page by click on the "Open WebStart page" on MAMP. Then, click on the `My Website` tab. You will be taken to http://localhost:8888/ or http://localhost/ depends on your Operation System
+10. Now, go back to your MAMP `Start` page by click on the "Open WebStart page" on MAMP. Then, click on the `My Website` tab. You will be taken to `http://localhost:8888/` or `http://localhost/` depends on your Operation System
 11. You should see something like this:
 
 # Index of /
 * [my-first-wp-site](#)/
 
 Click on the `my-first-wp-site` hyperlink to start the WordPress set up.
+
 12. Going through the instructions and click on `Let's go!` button to be taken to the **database connection details** page.
 13. Make changes to your database connection details so it looks like below:
     Database Name:      my-first-wp-site
