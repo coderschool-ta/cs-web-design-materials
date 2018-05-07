@@ -62,8 +62,8 @@ Click 'Submit'
 <img src="https://i.imgur.com/gzMIRKZ.png" alt="WP installation details">
 We use `root` for default username and password. You can change it later when you are more familar with WordPress.
 Click on `Install WordPress`.
-Success! WordPress has been installed.
-16. Now you can log in the newly set up WordPress website (locally) using the default username and password.
+
+16. Success! WordPress has been installed. Now you can log in the newly set up WordPress website (locally) using the default username and password.
 <img src="https://i.imgur.com/tFUL9fW.png" alt="WP Dashboard">
 
 
