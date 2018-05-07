@@ -11,7 +11,7 @@ A webhost server nowsadays always comes with the AMP (Apache, MySQL, PHP) stack 
 
 In today lab, we will get to learn these technology stacks in details. You will be pair programming with a person sitting next to you. The goal of today lab is {INSERT HERE}
 
-## Milestone 1: Install and run WordPress locally
+## Milestone 1: Set up your WordPress locally
 The WordPress.org website has [detailed instructions](https://codex.wordpress.org/Installing_WordPress) on how to install WordPress and run it locally. However, the guide is too long and has information that you do really need to know. 
 
 I will provide a quick and easy way to get WordPress running locally in your computer. Below are the steps:
@@ -49,7 +49,7 @@ You can also create an additonal custom table for your custom plugins but we won
 
 ### Milestone 1.3: Set up WordPress in MAMP
 8. Remember the unzip `wordpress` package that we did in step 2? Change the folder name from `wordpress` to `my-first-wp-site` (same name as database name).
-9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the /MAMP/htdocs folder. `htdocs` folder is where all your wordpresses (websites) live.
+9. Manually move (copy-paste or drag-drop) the `my-first-wp-site` folder to inside the `/MAMP/htdocs` folder. `htdocs` folder is where all your wordpresses (websites) live.
 
 <img src="https://i.imgur.com/vWCyeQV.png" alt="htdocs">
 
@@ -153,7 +153,7 @@ See how every post has a comment section that anyone can just make a comment on.
 
 <img src="https://i.imgur.com/Cfv8eXM.png" alt="post with no comment">
 
-## Milestone 3: Set up a Remote Server for your WordPress site
+## Milestone 3: Set up a Remote Server
 Your WordPress website has only run locally in your computer so far. Now, we will push the website into the web. To do that we will need a *domain* and a *hosting server*. Have I told you that you can do all of the hosting for free of charge? :)
 
 ### Milestone 3.1: Register a free domain
@@ -206,12 +206,46 @@ You should receive a congratulation notice saying that your domain is available.
 
 7. Now, you will need to provide a Label and Password for your account. Make sure to keep these credentials somewhere safe because you will need them later. I'll change my account Label to "My First DIY WordPress" and keep the Password the same.
 8. Click on `CREATE ACCOUNT`.
-9. The server is being set up. The `epiz_********` is your Username. Click on `VIEW IN CLIENT AREA`.
+9. The server is being set up. The `epiz_22******` is your Username. Click on `VIEW IN CLIENT AREA`.
 10. Wait for a few minutes and then go to your website (mine is `http://my-diy-wordpress-site.ml/`),
 11. If you see the below for your website, congrats! Your remote server is now live!
+
 <img src="https://i.imgur.com/slExbL1.png" alt="infinityfree-4">
 
-### Milestone 5: Register a free host
+### Milestone 4: Migrate your WordPress online
+Now, we have an online remote server all set up, and a WordPress website running locally. The last thing we need to do is to migrate our local WordPress online.
+
+1. Inside your InfinityFree account, go to the Control Panel (cPanel) by click on the button `GO TO CONTROL PANEL`. The cPanel is a user interface for all the technicall stuff that let remote server owners manage their websites easier.
+2. Now, to push our local stuff online correctly, we will have to do 2 main things:
+* Upload MySQL database online using sql script
+* Upload all WP files online using a FTP tool
+
+### Milestone 4.1: Migrate database
+3. In your cPanel, click on 'MySQL Databases' to access to all your remote databases. There is current no database because you just set up the server.
+4. Enter a name for your new database and click on 'Create Database'. My remote database name is: `epiz_22047555_my_first_wp_site`. This is an empty database (you can check the database by using the online phpMyAdmin).
+5. Now, we need to export our local database and import to the online database. Access your local phpMyAdmin through MAMP, choose `my-first-wp-site` database and click on the `Export` tab.
+
+<img src="https://i.imgur.com/eAasKSJ.png" alt="sql-export">
+
+6. Leave the defaul options: **Quick** export in **SQL** format and click `Go`. The tool provides you a sql script that generate all the tables and contents of the `my-first-wp-site` database. **Copy** the script.
+7. Open a new file in your text editor and **paste** the script here. Save the file as `my-first-wp-site.sql` in your local machine.
+
+<img src="https://i.imgur.com/B43bgwa.png" alt="sql-export-script">
+
+3. Remember your WordPress folder `my-first-wp-site` that sits in `/MAMP/htdocs` folder? Make a copy of that outside MAMP and rename it to `my-first-wp-site-prod`. I don't want to use the same folder in MAMP because that one is the dev version for running locally. To run on a remote server, it needs to be configured with the remote server details.
+4. Use your text editor to open the `wp-config.php` file in the `my-first-wp-site-prod` folder to make some changes.
+define('DB_NAME', 'my-first-wp-site');
+
+
+/** MySQL database username */
+define('DB_USER', 'root');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'root');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost:8888');
+
 
 
 ### Milestone 2.1: Upload a WordPress theme
