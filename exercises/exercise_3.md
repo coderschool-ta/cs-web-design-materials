@@ -12,7 +12,7 @@ All successful landing pages have these elements: header, body, and footer. Let�
 OK! Let’s go step by step.
 
 ## Milestone 1: PLANNING
-(consinder using IDEO's design thinking or human0centered design)
+(consinder using IDEO's design thinking or human-centered design)
 * Talk to the client, or in this case, talk to your partner, try to empathize. Find out what the goal of the product is. What problem are you trying to solve for your customer? You already did a lot of this yesterday.
 * Make a list of elements and their purpose. You can use pencil and paper to sketch out your designs and element placings. This can help you to use the landing page space effectively.
 * After you sketch, open your design software, or in this case, use your Weebly tool. Let’s create content and add text to your design!
