@@ -7,15 +7,15 @@ This assignment is optional. You will be adding more styling to your Custom Them
 
 ## User Stories
 The following user stories **must** be completed:
-[] Enhance the Page template by using the  `page.php` file.
-[] Make a screenshot for your custom theme. The screenshot is viewable in Theme Details
-[] Add a Tagline under your site title. The custom theme currently does not show the Tagline
+* [ ] Enhance the Page template by using the  `page.php` file.
+* [ ] Make a screenshot for your custom theme. The screenshot is viewable in Theme Details
+* [ ] Add a Tagline under your site title. The custom theme currently does not show the Tagline
 
 The following user stories are **optional**:
-[] Enhance the Comment functionality by using the `Comments.php` file.
-[] Enhance the Author functionality by using the `author.php` file.
-[] Enhance the Search functionality by using the `search.php` file.
-[] Anything that you find it interesting and want to add in here
+* [ ] Enhance the Comment functionality by using the `Comments.php` file.
+* [ ] Enhance the Author functionality by using the `author.php` file.
+* [ ] Enhance the Search functionality by using the `search.php` file.
+* [ ] Anything that you find it interesting and want to add in here
 
 ## Submission
 Submitted through GitHub:
