@@ -3,11 +3,9 @@
 ## Overview:
 Today lab is your final exercise of our Web Design Bootcamp class. We will be building a basic custom WordPress theme using HTML, CSS, and a bit of PHP. The goal of the lab is to get you understand how templates in WordPress work, and how you can make your own templates.
 
-We will start developing our custom WordPress theme in local environment (with MAMP). When we are happy with our theme, we can deploy it to the remote server using FileZilla.
+We will develop our custom WordPress theme in local environment (with MAMP). When we are happy with our theme, we can deploy it to the remote server using FileZilla.
 
 First, we will create the main stylesheet `style.css` with theme information, and our core template files such as `header.php`, `footer.php`, `sidebar.php`. Then we will create the `index.php` to load all the html elements from other files.
-
-
 
 Below is a result of your custom theme (Blog page) with just dynamic HTML content:
 
@@ -431,7 +429,7 @@ Now is a good time to add your sidebar to the right of your page.
     ```
     Save and reload page. Now, you have a Search widget.
 
-## Milestone 7: Change Post Page's Template
+## (OPTIONAL) Milestone 7: Change Post Page's Template
 We have a few more things to do. If you click on a Post link to open a Post right now, this Post still uses the `index.php` template. We want the Post to have its own template by using the `single.php` template to include Comment area and functionality. Currently, there is no Comment area in the current Post.
 
 ### Create single.php
@@ -460,10 +458,8 @@ We have a few more things to do. If you click on a Post link to open a Post righ
 
     <img src="https://i.imgur.com/pkVqu3y.png" alt="styling-6">
 
-## (OPTIONAL) Milestone 8: Make the WordPress website better
-* Change Page template to use `page.php` (make sure to remove the `meta` line out of the Page template)
-* Make a screenshot for your custom theme (and name it *screenshot.png*)
-* Add Tagline under your site title
+8. Congrats! You have made your first custom theme!
 
-Your final theme should look like this:
-    <img src="https://i.imgur.com/NWsmtFI.png" alt="mocha2">
+## (OPTIONAL) Milestone 8: Push the Custom Ttheme to Remote Server
+You should know how to do this by now. Just copy the `mocha` folder from your local `/wp-content/themes/` to your remote `/wp-content/themes/`
+
